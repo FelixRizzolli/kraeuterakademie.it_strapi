@@ -25,6 +25,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "sharp": "^0.34.1",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
@@ -40,5 +41,6 @@
   "strapi": {
     "uuid": "72e52f42-36c6-4feb-9b73-5b2895bc415e",
     "installId": "b6ef78281b8997aaa975f39c7e5a5be63a6178e0036f1dae5afef69f3e2a0e3b"
-  }
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }

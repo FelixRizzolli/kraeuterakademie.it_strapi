@@ -101,6 +101,7 @@ node_modules
 # Package managers
 ############################
 
+# yarn
 .yarn/*
 !.yarn/cache
 !.yarn/unplugged
@@ -110,6 +111,10 @@ node_modules
 !.yarn/versions
 .pnp.*
 yarn-error.log
+
+# pnpm
+.pnpm-debug.log
+.pnpm-store
 
 ############################
 # Tests

@@ -1,0 +1,8 @@
+.DS_Store
+.pnpm-store
+.tmp/
+.cache/
+.git/
+build/
+node_modules/
+.env
