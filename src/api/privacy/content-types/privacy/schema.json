@@ -1,16 +1,14 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "privacies",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "Über Mich",
-    "description": "Write about yourself and the content you create"
+    "singularName": "privacy",
+    "pluralName": "privacies",
+    "displayName": "Privacy"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
     "hero": {
       "type": "component",

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_content_elements_image_texts",
+  "info": {
+    "displayName": "ImageText",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "text1": {
+      "type": "blocks"
+    },
+    "infos": {
+      "type": "string"
+    },
+    "text2": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    }
+  }
+}

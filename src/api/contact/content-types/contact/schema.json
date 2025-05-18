@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Kontakt"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.hero-big"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.image-text"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "coursess",
+  "info": {
+    "singularName": "courses",
+    "pluralName": "coursess",
+    "displayName": "Kräuterkurse"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.hero-big"
+    },
+    "accordions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.accordions"
+    },
+    "nextcourses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.course-list"
+    },
+    "infos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.infos"
+    },
+    "runningcourses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content-elements.course-list"
+    }
+  }
+}

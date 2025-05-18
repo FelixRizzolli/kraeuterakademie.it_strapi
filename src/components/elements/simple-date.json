@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_simple_dates",
+  "info": {
+    "displayName": "SimpleDate",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    }
+  }
+}

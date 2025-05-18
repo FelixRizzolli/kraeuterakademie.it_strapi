@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_content_elements_hero_smalls",
+  "info": {
+    "displayName": "HeroSmall",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "displayName": "Link",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

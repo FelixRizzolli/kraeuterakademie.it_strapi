@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Startseite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.hero-small"
+    },
+    "text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-elements.animated-text"
+    }
+  }
+}

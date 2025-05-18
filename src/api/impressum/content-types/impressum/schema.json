@@ -1,16 +1,14 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "impressums",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "Über Mich",
-    "description": "Write about yourself and the content you create"
+    "singularName": "impressum",
+    "pluralName": "impressums",
+    "displayName": "Impressum"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
     "hero": {
       "type": "component",

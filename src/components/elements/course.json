@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_elements_courses",
+  "info": {
+    "displayName": "course",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "dates": {
+      "displayName": "SimpleDate",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.simple-date"
+    }
+  }
+}

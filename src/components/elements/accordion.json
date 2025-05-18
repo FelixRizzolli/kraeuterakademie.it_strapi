@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_accordions",
+  "info": {
+    "displayName": "Accordion",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}
