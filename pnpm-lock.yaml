@@ -21,8 +21,8 @@ importers:
         specifier: 5.13.1
         version: 5.13.1(@babel/runtime@7.27.1)(@codemirror/autocomplete@6.18.6)(@codemirror/language@6.11.0)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.11)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.36.8)(@swc/helpers@0.5.17)(@types/hoist-non-react-statics@3.3.6)(@types/node@20.17.50)(@types/react-dom@18.3.7(@types/react@18.3.22))(@types/react@18.3.22)(codemirror@5.65.19)(esbuild@0.25.4)(koa@2.15.4)(pg@8.8.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@6.30.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(redux@4.2.1)(styled-components@6.1.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.39.2)(type-fest@4.41.0)
       fs-extra:
-        specifier: ^10.0.0
-        version: 10.1.0
+        specifier: ^11.3.0
+        version: 11.3.0
       mime-types:
         specifier: ^2.1.27
         version: 2.1.35
