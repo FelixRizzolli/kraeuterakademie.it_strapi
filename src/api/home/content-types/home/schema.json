@@ -13,7 +13,7 @@
   "attributes": {
     "seo": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.seo"
     },
     "hero": {
