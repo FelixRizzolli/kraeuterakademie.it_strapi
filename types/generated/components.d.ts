@@ -170,11 +170,14 @@ export interface ElementsLink extends Struct.ComponentSchema {
 export interface ElementsSimpleDate extends Struct.ComponentSchema {
   collectionName: 'components_elements_simple_dates';
   info: {
+    description: '';
     displayName: 'SimpleDate';
     icon: 'calendar';
   };
   attributes: {
-    date: Schema.Attribute.Date;
+    date: Schema.Attribute.Date &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
   };
 }
 
