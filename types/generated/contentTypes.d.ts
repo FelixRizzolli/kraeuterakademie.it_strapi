@@ -403,6 +403,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
 export interface ApiContactContact extends Struct.SingleTypeSchema {
   collectionName: 'contacts';
   info: {
+    description: '';
     displayName: 'Kontakt';
     pluralName: 'contacts';
     singularName: 'contact';
@@ -423,6 +424,7 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -432,6 +434,7 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
 export interface ApiCookiesCookies extends Struct.SingleTypeSchema {
   collectionName: 'cookiess';
   info: {
+    description: '';
     displayName: 'Cookies';
     pluralName: 'cookiess';
     singularName: 'cookies';
@@ -451,6 +454,7 @@ export interface ApiCookiesCookies extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     texte: Schema.Attribute.Component<'content-elements.text-element', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -461,6 +465,7 @@ export interface ApiCookiesCookies extends Struct.SingleTypeSchema {
 export interface ApiCoursesCourses extends Struct.SingleTypeSchema {
   collectionName: 'coursess';
   info: {
+    description: '';
     displayName: 'Kr\u00E4uterkurse';
     pluralName: 'coursess';
     singularName: 'courses';
@@ -493,6 +498,7 @@ export interface ApiCoursesCourses extends Struct.SingleTypeSchema {
       'content-elements.course-list',
       true
     >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -533,6 +539,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiHomeHome extends Struct.SingleTypeSchema {
   collectionName: 'homes';
   info: {
+    description: '';
     displayName: 'Startseite';
     pluralName: 'homes';
     singularName: 'home';
@@ -549,6 +556,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', true>;
     text: Schema.Attribute.Component<'content-elements.animated-text', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -559,6 +567,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
 export interface ApiImpressumImpressum extends Struct.SingleTypeSchema {
   collectionName: 'impressums';
   info: {
+    description: '';
     displayName: 'Impressum';
     pluralName: 'impressums';
     singularName: 'impressum';
@@ -578,6 +587,7 @@ export interface ApiImpressumImpressum extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     texte: Schema.Attribute.Component<'content-elements.text-element', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -588,6 +598,7 @@ export interface ApiImpressumImpressum extends Struct.SingleTypeSchema {
 export interface ApiPrivacyPrivacy extends Struct.SingleTypeSchema {
   collectionName: 'privacies';
   info: {
+    description: '';
     displayName: 'Privacy';
     pluralName: 'privacies';
     singularName: 'privacy';
@@ -607,6 +618,7 @@ export interface ApiPrivacyPrivacy extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     texte: Schema.Attribute.Component<'content-elements.text-element', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

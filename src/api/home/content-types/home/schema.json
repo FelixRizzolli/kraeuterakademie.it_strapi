@@ -4,12 +4,18 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Startseite"
+    "displayName": "Startseite",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
     "hero": {
       "type": "component",
       "repeatable": false,

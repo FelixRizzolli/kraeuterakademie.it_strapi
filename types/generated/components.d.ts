@@ -178,6 +178,33 @@ export interface ElementsSimpleDate extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedScharedImage extends Struct.ComponentSchema {
+  collectionName: 'components_shared_schared_images';
+  info: {
+    displayName: 'ScharedImage';
+    icon: 'picture';
+  };
+  attributes: {
+    alt: Schema.Attribute.String;
+    media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SharedSeo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_seos';
+  info: {
+    displayName: 'SEO';
+    icon: 'search';
+  };
+  attributes: {
+    keywords: Schema.Attribute.String;
+    metaDescription: Schema.Attribute.String;
+    metaTitle: Schema.Attribute.String;
+    preventIndexing: Schema.Attribute.Boolean;
+    sharedImage: Schema.Attribute.Component<'shared.schared-image', false>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -195,6 +222,8 @@ declare module '@strapi/strapi' {
       'elements.info': ElementsInfo;
       'elements.link': ElementsLink;
       'elements.simple-date': ElementsSimpleDate;
+      'shared.schared-image': SharedScharedImage;
+      'shared.seo': SharedSeo;
     }
   }
 }

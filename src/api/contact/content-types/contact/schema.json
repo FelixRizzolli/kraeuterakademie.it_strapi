@@ -4,12 +4,18 @@
   "info": {
     "singularName": "contact",
     "pluralName": "contacts",
-    "displayName": "Kontakt"
+    "displayName": "Kontakt",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
     "hero": {
       "type": "component",
       "repeatable": false,

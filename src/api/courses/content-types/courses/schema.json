@@ -4,12 +4,18 @@
   "info": {
     "singularName": "courses",
     "pluralName": "coursess",
-    "displayName": "Kräuterkurse"
+    "displayName": "Kräuterkurse",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
     "hero": {
       "type": "component",
       "repeatable": false,

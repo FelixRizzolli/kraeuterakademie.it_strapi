@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "search"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "sharedImage": {
+      "displayName": "ScharedImage",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.schared-image"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "preventIndexing": {
+      "type": "boolean"
+    }
+  }
+}
