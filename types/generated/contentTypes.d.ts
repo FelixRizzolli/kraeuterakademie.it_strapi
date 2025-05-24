@@ -385,6 +385,19 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    components: Schema.Attribute.DynamicZone<
+      [
+        'content.text-element',
+        'content.mood-picture',
+        'content.infos',
+        'content.image-text',
+        'content.hero-small',
+        'content.hero-big',
+        'content.course-list',
+        'content.animated-text',
+        'content.accordions',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -411,6 +424,19 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    components: Schema.Attribute.DynamicZone<
+      [
+        'content.text-element',
+        'content.mood-picture',
+        'content.infos',
+        'content.image-text',
+        'content.hero-small',
+        'content.hero-big',
+        'content.course-list',
+        'content.animated-text',
+        'content.accordions',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -440,6 +466,19 @@ export interface ApiCookiesCookies extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    components: Schema.Attribute.DynamicZone<
+      [
+        'content.text-element',
+        'content.mood-picture',
+        'content.infos',
+        'content.image-text',
+        'content.hero-small',
+        'content.hero-big',
+        'content.course-list',
+        'content.animated-text',
+        'content.accordions',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -469,6 +508,19 @@ export interface ApiCoursesCourses extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    components: Schema.Attribute.DynamicZone<
+      [
+        'content.text-element',
+        'content.mood-picture',
+        'content.infos',
+        'content.image-text',
+        'content.hero-small',
+        'content.hero-big',
+        'content.course-list',
+        'content.animated-text',
+        'content.accordions',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -529,6 +581,19 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    components: Schema.Attribute.DynamicZone<
+      [
+        'content.text-element',
+        'content.mood-picture',
+        'content.infos',
+        'content.image-text',
+        'content.hero-small',
+        'content.hero-big',
+        'content.course-list',
+        'content.animated-text',
+        'content.accordions',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -555,6 +620,19 @@ export interface ApiImpressumImpressum extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    components: Schema.Attribute.DynamicZone<
+      [
+        'content.text-element',
+        'content.mood-picture',
+        'content.infos',
+        'content.image-text',
+        'content.hero-small',
+        'content.hero-big',
+        'content.course-list',
+        'content.animated-text',
+        'content.accordions',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -584,6 +662,19 @@ export interface ApiPrivacyPrivacy extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    components: Schema.Attribute.DynamicZone<
+      [
+        'content.text-element',
+        'content.mood-picture',
+        'content.infos',
+        'content.image-text',
+        'content.hero-small',
+        'content.hero-big',
+        'content.course-list',
+        'content.animated-text',
+        'content.accordions',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -16,15 +16,19 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "hero": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content-elements.hero-small"
-    },
-    "text": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content-elements.animated-text"
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "content.text-element",
+        "content.mood-picture",
+        "content.infos",
+        "content.image-text",
+        "content.hero-small",
+        "content.hero-big",
+        "content.course-list",
+        "content.animated-text",
+        "content.accordions"
+      ]
     }
   }
 }

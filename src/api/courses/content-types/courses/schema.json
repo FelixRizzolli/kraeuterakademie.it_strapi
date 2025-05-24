@@ -16,30 +16,19 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "hero": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content-elements.hero-big"
-    },
-    "accordions": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content-elements.accordions"
-    },
-    "nextcourses": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content-elements.course-list"
-    },
-    "infos": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content-elements.infos"
-    },
-    "runningcourses": {
-      "type": "component",
-      "repeatable": true,
-      "component": "content-elements.course-list"
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "content.text-element",
+        "content.mood-picture",
+        "content.infos",
+        "content.image-text",
+        "content.hero-small",
+        "content.hero-big",
+        "content.course-list",
+        "content.animated-text",
+        "content.accordions"
+      ]
     }
   }
 }
