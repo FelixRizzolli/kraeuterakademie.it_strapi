@@ -373,171 +373,6 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiAboutAbout extends Struct.SingleTypeSchema {
-  collectionName: 'abouts';
-  info: {
-    description: 'Write about yourself and the content you create';
-    displayName: '\u00DCber Mich';
-    pluralName: 'abouts';
-    singularName: 'about';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    components: Schema.Attribute.DynamicZone<
-      [
-        'content.text-element',
-        'content.mood-picture',
-        'content.infos',
-        'content.image-text',
-        'content.hero-small',
-        'content.hero-big',
-        'content.course-list',
-        'content.animated-text',
-        'content.accordions',
-      ]
-    >;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'> &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiContactContact extends Struct.SingleTypeSchema {
-  collectionName: 'contacts';
-  info: {
-    description: '';
-    displayName: 'Kontakt';
-    pluralName: 'contacts';
-    singularName: 'contact';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    components: Schema.Attribute.DynamicZone<
-      [
-        'content.text-element',
-        'content.mood-picture',
-        'content.infos',
-        'content.image-text',
-        'content.hero-small',
-        'content.hero-big',
-        'content.course-list',
-        'content.animated-text',
-        'content.accordions',
-      ]
-    >;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::contact.contact'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiCookiesCookies extends Struct.SingleTypeSchema {
-  collectionName: 'cookiess';
-  info: {
-    description: '';
-    displayName: 'Cookies';
-    pluralName: 'cookiess';
-    singularName: 'cookies';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    components: Schema.Attribute.DynamicZone<
-      [
-        'content.text-element',
-        'content.mood-picture',
-        'content.infos',
-        'content.image-text',
-        'content.hero-small',
-        'content.hero-big',
-        'content.course-list',
-        'content.animated-text',
-        'content.accordions',
-      ]
-    >;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::cookies.cookies'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiCoursesCourses extends Struct.SingleTypeSchema {
-  collectionName: 'coursess';
-  info: {
-    description: '';
-    displayName: 'Kr\u00E4uterkurse';
-    pluralName: 'coursess';
-    singularName: 'courses';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    components: Schema.Attribute.DynamicZone<
-      [
-        'content.text-element',
-        'content.mood-picture',
-        'content.infos',
-        'content.image-text',
-        'content.hero-small',
-        'content.hero-big',
-        'content.course-list',
-        'content.animated-text',
-        'content.accordions',
-      ]
-    >;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::courses.courses'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -569,13 +404,13 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiHomeHome extends Struct.SingleTypeSchema {
-  collectionName: 'homes';
+export interface ApiPagePage extends Struct.CollectionTypeSchema {
+  collectionName: 'pages';
   info: {
     description: '';
-    displayName: 'Startseite';
-    pluralName: 'homes';
-    singularName: 'home';
+    displayName: 'Page';
+    pluralName: 'pages';
+    singularName: 'page';
   };
   options: {
     draftAndPublish: true;
@@ -598,97 +433,14 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-  };
-}
-
-export interface ApiImpressumImpressum extends Struct.SingleTypeSchema {
-  collectionName: 'impressums';
-  info: {
-    description: '';
-    displayName: 'Impressum';
-    pluralName: 'impressums';
-    singularName: 'impressum';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    components: Schema.Attribute.DynamicZone<
-      [
-        'content.text-element',
-        'content.mood-picture',
-        'content.infos',
-        'content.image-text',
-        'content.hero-small',
-        'content.hero-big',
-        'content.course-list',
-        'content.animated-text',
-        'content.accordions',
-      ]
-    >;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::impressum.impressum'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiPrivacyPrivacy extends Struct.SingleTypeSchema {
-  collectionName: 'privacies';
-  info: {
-    description: '';
-    displayName: 'Privacy';
-    pluralName: 'privacies';
-    singularName: 'privacy';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    components: Schema.Attribute.DynamicZone<
-      [
-        'content.text-element',
-        'content.mood-picture',
-        'content.infos',
-        'content.image-text',
-        'content.hero-small',
-        'content.hero-big',
-        'content.course-list',
-        'content.animated-text',
-        'content.accordions',
-      ]
-    >;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::privacy.privacy'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
+    url: Schema.Attribute.String;
   };
 }
 
@@ -1201,14 +953,8 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::about.about': ApiAboutAbout;
-      'api::contact.contact': ApiContactContact;
-      'api::cookies.cookies': ApiCookiesCookies;
-      'api::courses.courses': ApiCoursesCourses;
       'api::global.global': ApiGlobalGlobal;
-      'api::home.home': ApiHomeHome;
-      'api::impressum.impressum': ApiImpressumImpressum;
-      'api::privacy.privacy': ApiPrivacyPrivacy;
+      'api::page.page': ApiPagePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
