@@ -1,7 +1,7 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface ContentElementsAccordions extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_accordions';
+export interface ContentAccordions extends Struct.ComponentSchema {
+  collectionName: 'components_content_accordions';
   info: {
     description: '';
     displayName: 'Accordions';
@@ -13,8 +13,8 @@ export interface ContentElementsAccordions extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsAnimatedText extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_animated_texts';
+export interface ContentAnimatedText extends Struct.ComponentSchema {
+  collectionName: 'components_content_animated_texts';
   info: {
     displayName: 'AnimatedText';
     icon: 'underline';
@@ -24,8 +24,8 @@ export interface ContentElementsAnimatedText extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsCourseList extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_course_lists';
+export interface ContentCourseList extends Struct.ComponentSchema {
+  collectionName: 'components_content_course_lists';
   info: {
     description: '';
     displayName: 'CourseList';
@@ -37,8 +37,8 @@ export interface ContentElementsCourseList extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsHeroBig extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_hero_bigs';
+export interface ContentHeroBig extends Struct.ComponentSchema {
+  collectionName: 'components_content_hero_bigs';
   info: {
     displayName: 'HeroBig';
     icon: 'picture';
@@ -49,8 +49,8 @@ export interface ContentElementsHeroBig extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsHeroSmall extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_hero_smalls';
+export interface ContentHeroSmall extends Struct.ComponentSchema {
+  collectionName: 'components_content_hero_smalls';
   info: {
     displayName: 'HeroSmall';
     icon: 'picture';
@@ -62,8 +62,8 @@ export interface ContentElementsHeroSmall extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsImageText extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_image_texts';
+export interface ContentImageText extends Struct.ComponentSchema {
+  collectionName: 'components_content_image_texts';
   info: {
     displayName: 'ImageText';
     icon: 'picture';
@@ -81,8 +81,8 @@ export interface ContentElementsImageText extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsInfos extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_infos';
+export interface ContentInfos extends Struct.ComponentSchema {
+  collectionName: 'components_content_infos';
   info: {
     displayName: 'Infos';
     icon: 'information';
@@ -93,8 +93,8 @@ export interface ContentElementsInfos extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsMoodPicture extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_mood_pictures';
+export interface ContentMoodPicture extends Struct.ComponentSchema {
+  collectionName: 'components_content_mood_pictures';
   info: {
     displayName: 'MoodPicture';
   };
@@ -103,8 +103,8 @@ export interface ContentElementsMoodPicture extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentElementsTextElement extends Struct.ComponentSchema {
-  collectionName: 'components_content_elements_text_elements';
+export interface ContentTextElement extends Struct.ComponentSchema {
+  collectionName: 'components_content_text_elements';
   info: {
     displayName: 'TextElement';
     icon: 'layer';
@@ -211,15 +211,15 @@ export interface SharedSeo extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'content-elements.accordions': ContentElementsAccordions;
-      'content-elements.animated-text': ContentElementsAnimatedText;
-      'content-elements.course-list': ContentElementsCourseList;
-      'content-elements.hero-big': ContentElementsHeroBig;
-      'content-elements.hero-small': ContentElementsHeroSmall;
-      'content-elements.image-text': ContentElementsImageText;
-      'content-elements.infos': ContentElementsInfos;
-      'content-elements.mood-picture': ContentElementsMoodPicture;
-      'content-elements.text-element': ContentElementsTextElement;
+      'content.accordions': ContentAccordions;
+      'content.animated-text': ContentAnimatedText;
+      'content.course-list': ContentCourseList;
+      'content.hero-big': ContentHeroBig;
+      'content.hero-small': ContentHeroSmall;
+      'content.image-text': ContentImageText;
+      'content.infos': ContentInfos;
+      'content.mood-picture': ContentMoodPicture;
+      'content.text-element': ContentTextElement;
       'elements.accordion': ElementsAccordion;
       'elements.course': ElementsCourse;
       'elements.info': ElementsInfo;
