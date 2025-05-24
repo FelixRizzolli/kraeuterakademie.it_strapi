@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_hero_smalls",
+  "info": {
+    "displayName": "HeroSmall",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

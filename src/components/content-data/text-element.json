@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_data_text_elements",
+  "info": {
+    "displayName": "TextElement",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    }
+  }
+}

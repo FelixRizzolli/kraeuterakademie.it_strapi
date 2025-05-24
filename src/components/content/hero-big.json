@@ -1,23 +1,19 @@
 {
   "collectionName": "components_content_hero_bigs",
   "info": {
-    "displayName": "HeroBig",
-    "icon": "picture"
+    "displayName": "HeroBig"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-data.hero-big"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-settings.hero-big"
     }
   }
 }

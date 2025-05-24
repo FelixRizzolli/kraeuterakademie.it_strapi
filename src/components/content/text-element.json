@@ -1,21 +1,19 @@
 {
   "collectionName": "components_content_text_elements",
   "info": {
-    "displayName": "TextElement",
-    "icon": "layer"
+    "displayName": "TextElement"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "content": {
-      "type": "blocks"
-    },
-    "link": {
+    "data": {
       "type": "component",
       "repeatable": false,
-      "component": "elements.link"
+      "component": "content-data.text-element"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-settings.text-element"
     }
   }
 }

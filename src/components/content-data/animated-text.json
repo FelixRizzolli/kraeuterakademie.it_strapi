@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_data_animated_texts",
+  "info": {
+    "displayName": "AnimatedText",
+    "icon": "underline"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

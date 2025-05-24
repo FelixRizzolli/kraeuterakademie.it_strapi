@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_animated_texts",
+  "info": {
+    "displayName": "AnimatedText",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

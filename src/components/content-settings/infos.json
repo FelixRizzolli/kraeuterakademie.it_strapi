@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_infos",
+  "info": {
+    "displayName": "Infos",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

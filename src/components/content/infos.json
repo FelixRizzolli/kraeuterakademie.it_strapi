@@ -1,21 +1,19 @@
 {
   "collectionName": "components_content_infos",
   "info": {
-    "displayName": "Infos",
-    "icon": "information"
+    "displayName": "Infos"
   },
   "options": {},
   "attributes": {
-    "infos": {
-      "displayName": "Info",
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.info"
-    },
-    "link": {
+    "data": {
       "type": "component",
       "repeatable": false,
-      "component": "elements.link"
+      "component": "content-data.infos"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-settings.infos"
     }
   }
 }

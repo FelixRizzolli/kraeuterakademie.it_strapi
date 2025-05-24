@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_mood_pictures",
+  "info": {
+    "displayName": "MoodPicture",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_course_lists",
+  "info": {
+    "displayName": "CourseList",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

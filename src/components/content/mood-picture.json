@@ -5,15 +5,15 @@
   },
   "options": {},
   "attributes": {
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-data.mood-picture"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-settings.mood-picture"
     }
   }
 }

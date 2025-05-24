@@ -1,29 +1,19 @@
 {
   "collectionName": "components_content_hero_smalls",
   "info": {
-    "displayName": "HeroSmall",
-    "icon": "picture"
+    "displayName": "HeroSmall"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "link": {
-      "displayName": "Link",
+    "data": {
       "type": "component",
       "repeatable": false,
-      "component": "elements.link"
+      "component": "content-data.hero-small"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-settings.hero-small"
     }
   }
 }

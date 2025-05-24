@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_text_elements",
+  "info": {
+    "displayName": "TextElement",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

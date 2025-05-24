@@ -1,13 +1,19 @@
 {
   "collectionName": "components_content_animated_texts",
   "info": {
-    "displayName": "AnimatedText",
-    "icon": "underline"
+    "displayName": "AnimatedText"
   },
   "options": {},
   "attributes": {
-    "text": {
-      "type": "text"
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-data.animated-text"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-settings.animated-text"
     }
   }
 }

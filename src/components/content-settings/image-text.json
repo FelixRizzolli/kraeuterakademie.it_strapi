@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_image_texts",
+  "info": {
+    "displayName": "ImageText",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

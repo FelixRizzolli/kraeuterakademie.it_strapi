@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_content_data_course_lists",
+  "info": {
+    "displayName": "CourseList",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "courses": {
+      "displayName": "course",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.course"
+    }
+  }
+}

@@ -1,37 +1,19 @@
 {
   "collectionName": "components_content_image_texts",
   "info": {
-    "displayName": "ImageText",
-    "icon": "picture"
+    "displayName": "ImageText"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "text1": {
-      "type": "blocks"
-    },
-    "infos": {
-      "type": "string"
-    },
-    "text2": {
-      "type": "blocks"
-    },
-    "link": {
+    "data": {
       "type": "component",
       "repeatable": false,
-      "component": "elements.link"
+      "component": "content-data.image-text"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-settings.image-text"
     }
   }
 }
