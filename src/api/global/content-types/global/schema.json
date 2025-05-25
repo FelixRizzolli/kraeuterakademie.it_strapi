@@ -35,6 +35,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.sidebar"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.footer"
     }
   }
 }

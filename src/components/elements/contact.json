@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_contacts",
+  "info": {
+    "displayName": "Contact"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "mail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    }
+  }
+}

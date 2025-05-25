@@ -340,6 +340,30 @@ export interface ElementsAccordion extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsAddress extends Struct.ComponentSchema {
+  collectionName: 'components_elements_addresses';
+  info: {
+    displayName: 'Address';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    place: Schema.Attribute.String;
+    street: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsContact extends Struct.ComponentSchema {
+  collectionName: 'components_elements_contacts';
+  info: {
+    displayName: 'Contact';
+  };
+  attributes: {
+    mail: Schema.Attribute.Component<'elements.link', false>;
+    name: Schema.Attribute.String;
+    phone: Schema.Attribute.Component<'elements.link', false>;
+  };
+}
+
 export interface ElementsCourse extends Struct.ComponentSchema {
   collectionName: 'components_elements_courses';
   info: {
@@ -389,6 +413,36 @@ export interface ElementsSimpleDate extends Struct.ComponentSchema {
     date: Schema.Attribute.Date &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
+  };
+}
+
+export interface ElementsSocial extends Struct.ComponentSchema {
+  collectionName: 'components_elements_socials';
+  info: {
+    displayName: 'Social';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    icon: Schema.Attribute.Enumeration<['facebook', 'instagram']>;
+    link: Schema.Attribute.Component<'elements.link', false>;
+  };
+}
+
+export interface SharedFooter extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footers';
+  info: {
+    description: '';
+    displayName: 'Footer';
+  };
+  attributes: {
+    address: Schema.Attribute.Component<'elements.address', false>;
+    contact: Schema.Attribute.Component<'elements.contact', false>;
+    links: Schema.Attribute.Component<'elements.link', true>;
+    socials: Schema.Attribute.Component<'elements.social', true>;
+    text1: Schema.Attribute.String;
+    text2: Schema.Attribute.String;
   };
 }
 
@@ -461,10 +515,14 @@ declare module '@strapi/strapi' {
       'content.mood-picture': ContentMoodPicture;
       'content.text-element': ContentTextElement;
       'elements.accordion': ElementsAccordion;
+      'elements.address': ElementsAddress;
+      'elements.contact': ElementsContact;
       'elements.course': ElementsCourse;
       'elements.info': ElementsInfo;
       'elements.link': ElementsLink;
       'elements.simple-date': ElementsSimpleDate;
+      'elements.social': ElementsSocial;
+      'shared.footer': SharedFooter;
       'shared.header': SharedHeader;
       'shared.seo': SharedSeo;
       'shared.sidebar': SharedSidebar;

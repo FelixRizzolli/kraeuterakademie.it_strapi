@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_elements_socials",
+  "info": {
+    "displayName": "Social"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram"
+      ]
+    },
+    "backgroundImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

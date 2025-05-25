@@ -389,6 +389,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     favicon: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+    footer: Schema.Attribute.Component<'shared.footer', false>;
     header: Schema.Attribute.Component<'shared.header', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
