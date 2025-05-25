@@ -392,6 +392,16 @@ export interface ElementsSimpleDate extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedHeader extends Struct.ComponentSchema {
+  collectionName: 'components_shared_headers';
+  info: {
+    displayName: 'Header';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'elements.link', true>;
+  };
+}
+
 export interface SharedSeo extends Struct.ComponentSchema {
   collectionName: 'components_shared_seos';
   info: {
@@ -444,6 +454,7 @@ declare module '@strapi/strapi' {
       'elements.info': ElementsInfo;
       'elements.link': ElementsLink;
       'elements.simple-date': ElementsSimpleDate;
+      'shared.header': SharedHeader;
       'shared.seo': SharedSeo;
     }
   }
