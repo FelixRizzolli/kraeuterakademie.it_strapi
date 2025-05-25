@@ -2,7 +2,8 @@
   "collectionName": "components_content_data_image_texts",
   "info": {
     "displayName": "ImageText",
-    "icon": "picture"
+    "icon": "picture",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,22 +11,23 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "text1": {
+    "textTop": {
       "type": "blocks"
     },
-    "infos": {
+    "textHighlight": {
       "type": "string"
     },
-    "text2": {
+    "textBottom": {
       "type": "blocks"
     },
     "link": {

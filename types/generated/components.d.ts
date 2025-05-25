@@ -65,18 +65,16 @@ export interface ContentDataHeroSmall extends Struct.ComponentSchema {
 export interface ContentDataImageText extends Struct.ComponentSchema {
   collectionName: 'components_content_data_image_texts';
   info: {
+    description: '';
     displayName: 'ImageText';
     icon: 'picture';
   };
   attributes: {
-    image: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    infos: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     link: Schema.Attribute.Component<'elements.link', false>;
-    text1: Schema.Attribute.Blocks;
-    text2: Schema.Attribute.Blocks;
+    textBottom: Schema.Attribute.Blocks;
+    textHighlight: Schema.Attribute.String;
+    textTop: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
   };
 }
@@ -281,6 +279,7 @@ export interface ContentHeroSmall extends Struct.ComponentSchema {
 export interface ContentImageText extends Struct.ComponentSchema {
   collectionName: 'components_content_image_texts';
   info: {
+    description: '';
     displayName: 'ImageText';
   };
   attributes: {
@@ -393,30 +392,19 @@ export interface ElementsSimpleDate extends Struct.ComponentSchema {
   };
 }
 
-export interface SharedScharedImage extends Struct.ComponentSchema {
-  collectionName: 'components_shared_schared_images';
-  info: {
-    displayName: 'ScharedImage';
-    icon: 'picture';
-  };
-  attributes: {
-    alt: Schema.Attribute.String;
-    media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-  };
-}
-
 export interface SharedSeo extends Struct.ComponentSchema {
   collectionName: 'components_shared_seos';
   info: {
+    description: '';
     displayName: 'SEO';
     icon: 'search';
   };
   attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     keywords: Schema.Attribute.String;
     metaDescription: Schema.Attribute.String;
     metaTitle: Schema.Attribute.String;
     preventIndexing: Schema.Attribute.Boolean;
-    sharedImage: Schema.Attribute.Component<'shared.schared-image', false>;
   };
 }
 
@@ -455,7 +443,6 @@ declare module '@strapi/strapi' {
       'elements.info': ElementsInfo;
       'elements.link': ElementsLink;
       'elements.simple-date': ElementsSimpleDate;
-      'shared.schared-image': SharedScharedImage;
       'shared.seo': SharedSeo;
     }
   }
