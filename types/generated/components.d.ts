@@ -419,6 +419,17 @@ export interface SharedSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSidebar extends Struct.ComponentSchema {
+  collectionName: 'components_shared_sidebars';
+  info: {
+    displayName: 'Sidebar';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<'elements.link', true>;
+    logoLink: Schema.Attribute.Component<'elements.link', false>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -456,6 +467,7 @@ declare module '@strapi/strapi' {
       'elements.simple-date': ElementsSimpleDate;
       'shared.header': SharedHeader;
       'shared.seo': SharedSeo;
+      'shared.sidebar': SharedSidebar;
     }
   }
 }
