@@ -423,7 +423,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'content.infos',
         'content.image-text',
         'content.hero-small',
-        'content.hero-big',
+        'content.hero-large',
         'content.course-list',
         'content.animated-text',
         'content.accordions',

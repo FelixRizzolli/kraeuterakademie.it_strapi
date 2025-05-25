@@ -37,10 +37,10 @@ export interface ContentDataCourseList extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentDataHeroBig extends Struct.ComponentSchema {
+export interface ContentDataHeroLarge extends Struct.ComponentSchema {
   collectionName: 'components_content_data_hero_bigs';
   info: {
-    displayName: 'HeroBig';
+    displayName: 'HeroLarge';
     icon: 'picture';
   };
   attributes: {
@@ -149,10 +149,10 @@ export interface ContentSettingsCourseList extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentSettingsHeroBig extends Struct.ComponentSchema {
+export interface ContentSettingsHeroLarge extends Struct.ComponentSchema {
   collectionName: 'components_content_settings_hero_bigs';
   info: {
-    displayName: 'HeroBig';
+    displayName: 'HeroLarge';
     icon: 'cog';
   };
   attributes: {
@@ -254,14 +254,14 @@ export interface ContentCourseList extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentHeroBig extends Struct.ComponentSchema {
+export interface ContentHeroLarge extends Struct.ComponentSchema {
   collectionName: 'components_content_hero_bigs';
   info: {
-    displayName: 'HeroBig';
+    displayName: 'HeroLarge';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.hero-big', false>;
-    settings: Schema.Attribute.Component<'content-settings.hero-big', false>;
+    data: Schema.Attribute.Component<'content-data.hero-large', false>;
+    settings: Schema.Attribute.Component<'content-settings.hero-large', false>;
   };
 }
 
@@ -414,7 +414,7 @@ declare module '@strapi/strapi' {
       'content-data.accordions': ContentDataAccordions;
       'content-data.animated-text': ContentDataAnimatedText;
       'content-data.course-list': ContentDataCourseList;
-      'content-data.hero-big': ContentDataHeroBig;
+      'content-data.hero-large': ContentDataHeroLarge;
       'content-data.hero-small': ContentDataHeroSmall;
       'content-data.image-text': ContentDataImageText;
       'content-data.infos': ContentDataInfos;
@@ -423,7 +423,7 @@ declare module '@strapi/strapi' {
       'content-settings.accordions-settings': ContentSettingsAccordionsSettings;
       'content-settings.animated-text': ContentSettingsAnimatedText;
       'content-settings.course-list': ContentSettingsCourseList;
-      'content-settings.hero-big': ContentSettingsHeroBig;
+      'content-settings.hero-large': ContentSettingsHeroLarge;
       'content-settings.hero-small': ContentSettingsHeroSmall;
       'content-settings.image-text': ContentSettingsImageText;
       'content-settings.infos': ContentSettingsInfos;
@@ -432,7 +432,7 @@ declare module '@strapi/strapi' {
       'content.accordions': ContentAccordions;
       'content.animated-text': ContentAnimatedText;
       'content.course-list': ContentCourseList;
-      'content.hero-big': ContentHeroBig;
+      'content.hero-large': ContentHeroLarge;
       'content.hero-small': ContentHeroSmall;
       'content.image-text': ContentImageText;
       'content.infos': ContentInfos;

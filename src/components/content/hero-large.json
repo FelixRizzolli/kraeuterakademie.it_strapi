@@ -1,19 +1,19 @@
 {
   "collectionName": "components_content_hero_bigs",
   "info": {
-    "displayName": "HeroBig"
+    "displayName": "HeroLarge"
   },
   "options": {},
   "attributes": {
     "data": {
       "type": "component",
       "repeatable": false,
-      "component": "content-data.hero-big"
+      "component": "content-data.hero-large"
     },
     "settings": {
       "type": "component",
       "repeatable": false,
-      "component": "content-settings.hero-big"
+      "component": "content-settings.hero-large"
     }
   }
 }
