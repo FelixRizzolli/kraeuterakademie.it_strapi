@@ -400,11 +400,12 @@ export interface SharedSeo extends Struct.ComponentSchema {
     icon: 'search';
   };
   attributes: {
+    follow: Schema.Attribute.Boolean;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    keywords: Schema.Attribute.String;
+    index: Schema.Attribute.Boolean;
     metaDescription: Schema.Attribute.String;
+    metaKeywords: Schema.Attribute.String;
     metaTitle: Schema.Attribute.String;
-    preventIndexing: Schema.Attribute.Boolean;
   };
 }
 
