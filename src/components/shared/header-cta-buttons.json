@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_header_cta_buttons",
+  "info": {
+    "displayName": "HeaderCtaButtons",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "menu": {
+      "type": "string"
+    }
+  }
+}

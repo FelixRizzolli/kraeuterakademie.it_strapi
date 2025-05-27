@@ -465,8 +465,21 @@ export interface SharedHeader extends Struct.ComponentSchema {
     displayName: 'Header';
   };
   attributes: {
+    ctaButtons: Schema.Attribute.Component<'shared.header-cta-buttons', false>;
     links: Schema.Attribute.Component<'elements.link', true>;
     sidebar: Schema.Attribute.Component<'shared.sidebar', false>;
+  };
+}
+
+export interface SharedHeaderCtaButtons extends Struct.ComponentSchema {
+  collectionName: 'components_shared_header_cta_buttons';
+  info: {
+    description: '';
+    displayName: 'HeaderCtaButtons';
+  };
+  attributes: {
+    link: Schema.Attribute.Component<'elements.link', false>;
+    menu: Schema.Attribute.String;
   };
 }
 
@@ -539,6 +552,7 @@ declare module '@strapi/strapi' {
       'elements.social': ElementsSocial;
       'shared.footer': SharedFooter;
       'shared.header': SharedHeader;
+      'shared.header-cta-buttons': SharedHeaderCtaButtons;
       'shared.seo': SharedSeo;
       'shared.sidebar': SharedSidebar;
     }
