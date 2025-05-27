@@ -402,6 +402,17 @@ export interface ElementsLink extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsPartner extends Struct.ComponentSchema {
+  collectionName: 'components_elements_partners';
+  info: {
+    displayName: 'Partner';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link: Schema.Attribute.Component<'elements.link', false>;
+  };
+}
+
 export interface ElementsSimpleDate extends Struct.ComponentSchema {
   collectionName: 'components_elements_simple_dates';
   info: {
@@ -440,6 +451,7 @@ export interface SharedFooter extends Struct.ComponentSchema {
     address: Schema.Attribute.Component<'elements.address', false>;
     contact: Schema.Attribute.Component<'elements.contact', false>;
     links: Schema.Attribute.Component<'elements.link', true>;
+    partners: Schema.Attribute.Component<'elements.partner', true>;
     socials: Schema.Attribute.Component<'elements.social', true>;
     text1: Schema.Attribute.Blocks;
     text2: Schema.Attribute.Blocks;
@@ -520,6 +532,7 @@ declare module '@strapi/strapi' {
       'elements.course': ElementsCourse;
       'elements.info': ElementsInfo;
       'elements.link': ElementsLink;
+      'elements.partner': ElementsPartner;
       'elements.simple-date': ElementsSimpleDate;
       'elements.social': ElementsSocial;
       'shared.footer': SharedFooter;
