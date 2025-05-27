@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_elements_books",
+  "info": {
+    "displayName": "Book",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "infos": {
+      "type": "blocks"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    }
+  }
+}

@@ -24,6 +24,17 @@ export interface ContentDataAnimatedText extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentDataBookList extends Struct.ComponentSchema {
+  collectionName: 'components_content_data_book_lists';
+  info: {
+    displayName: 'BookList';
+  };
+  attributes: {
+    books: Schema.Attribute.Component<'elements.book', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContentDataCourseList extends Struct.ComponentSchema {
   collectionName: 'components_content_data_course_lists';
   info: {
@@ -138,6 +149,17 @@ export interface ContentSettingsAnimatedText extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentSettingsBookList extends Struct.ComponentSchema {
+  collectionName: 'components_content_settings_book_lists';
+  info: {
+    displayName: 'BookList';
+    icon: 'book';
+  };
+  attributes: {
+    default: Schema.Attribute.String;
+  };
+}
+
 export interface ContentSettingsCourseList extends Struct.ComponentSchema {
   collectionName: 'components_content_settings_course_lists';
   info: {
@@ -240,6 +262,18 @@ export interface ContentAnimatedText extends Struct.ComponentSchema {
       'content-settings.animated-text',
       false
     >;
+  };
+}
+
+export interface ContentBookList extends Struct.ComponentSchema {
+  collectionName: 'components_content_book_lists';
+  info: {
+    displayName: 'BookList';
+    icon: 'book';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'content-data.book-list', false>;
+    settings: Schema.Attribute.Component<'content-settings.book-list', false>;
   };
 }
 
@@ -349,6 +383,22 @@ export interface ElementsAddress extends Struct.ComponentSchema {
     name: Schema.Attribute.String;
     place: Schema.Attribute.String;
     street: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsBook extends Struct.ComponentSchema {
+  collectionName: 'components_elements_books';
+  info: {
+    description: '';
+    displayName: 'Book';
+    icon: 'book';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    infos: Schema.Attribute.Blocks;
+    link: Schema.Attribute.Component<'elements.link', false>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -516,6 +566,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'content-data.accordions': ContentDataAccordions;
       'content-data.animated-text': ContentDataAnimatedText;
+      'content-data.book-list': ContentDataBookList;
       'content-data.course-list': ContentDataCourseList;
       'content-data.hero-large': ContentDataHeroLarge;
       'content-data.hero-small': ContentDataHeroSmall;
@@ -525,6 +576,7 @@ declare module '@strapi/strapi' {
       'content-data.text-element': ContentDataTextElement;
       'content-settings.accordions-settings': ContentSettingsAccordionsSettings;
       'content-settings.animated-text': ContentSettingsAnimatedText;
+      'content-settings.book-list': ContentSettingsBookList;
       'content-settings.course-list': ContentSettingsCourseList;
       'content-settings.hero-large': ContentSettingsHeroLarge;
       'content-settings.hero-small': ContentSettingsHeroSmall;
@@ -534,6 +586,7 @@ declare module '@strapi/strapi' {
       'content-settings.text-element': ContentSettingsTextElement;
       'content.accordions': ContentAccordions;
       'content.animated-text': ContentAnimatedText;
+      'content.book-list': ContentBookList;
       'content.course-list': ContentCourseList;
       'content.hero-large': ContentHeroLarge;
       'content.hero-small': ContentHeroSmall;
@@ -543,6 +596,7 @@ declare module '@strapi/strapi' {
       'content.text-element': ContentTextElement;
       'elements.accordion': ElementsAccordion;
       'elements.address': ElementsAddress;
+      'elements.book': ElementsBook;
       'elements.contact': ElementsContact;
       'elements.course': ElementsCourse;
       'elements.info': ElementsInfo;

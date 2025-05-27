@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_settings_book_lists",
+  "info": {
+    "displayName": "BookList",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  }
+}

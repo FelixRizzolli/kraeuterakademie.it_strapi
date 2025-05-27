@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_content_data_book_lists",
+  "info": {
+    "displayName": "BookList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "books": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.book"
+    }
+  }
+}
