@@ -6,31 +6,31 @@
   },
   "options": {},
   "attributes": {
-    "links": {
+    "address": {
       "type": "component",
-      "repeatable": true,
-      "component": "elements.link"
-    },
-    "text1": {
-      "type": "string"
-    },
-    "text2": {
-      "type": "string"
+      "repeatable": false,
+      "component": "elements.address"
     },
     "contact": {
       "type": "component",
       "repeatable": false,
       "component": "elements.contact"
     },
-    "address": {
-      "type": "component",
-      "repeatable": false,
-      "component": "elements.address"
+    "text1": {
+      "type": "blocks"
+    },
+    "text2": {
+      "type": "blocks"
     },
     "socials": {
       "type": "component",
       "repeatable": true,
       "component": "elements.social"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link"
     }
   }
 }

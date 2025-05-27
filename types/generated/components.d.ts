@@ -441,8 +441,8 @@ export interface SharedFooter extends Struct.ComponentSchema {
     contact: Schema.Attribute.Component<'elements.contact', false>;
     links: Schema.Attribute.Component<'elements.link', true>;
     socials: Schema.Attribute.Component<'elements.social', true>;
-    text1: Schema.Attribute.String;
-    text2: Schema.Attribute.String;
+    text1: Schema.Attribute.Blocks;
+    text2: Schema.Attribute.Blocks;
   };
 }
 
