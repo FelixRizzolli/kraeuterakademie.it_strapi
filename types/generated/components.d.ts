@@ -461,10 +461,12 @@ export interface SharedFooter extends Struct.ComponentSchema {
 export interface SharedHeader extends Struct.ComponentSchema {
   collectionName: 'components_shared_headers';
   info: {
+    description: '';
     displayName: 'Header';
   };
   attributes: {
     links: Schema.Attribute.Component<'elements.link', true>;
+    sidebar: Schema.Attribute.Component<'shared.sidebar', false>;
   };
 }
 
