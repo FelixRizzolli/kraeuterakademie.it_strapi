@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_data_swiper_cards",
+  "info": {
+    "displayName": "SwiperCard",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "component": "elements.swiper-card-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

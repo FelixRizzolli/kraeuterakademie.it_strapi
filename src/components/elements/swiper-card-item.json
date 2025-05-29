@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_elements_swiper_card_items",
+  "info": {
+    "displayName": "SwiperCardItem",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "info": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

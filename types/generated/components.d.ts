@@ -125,6 +125,18 @@ export interface ContentDataMoodPicture extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentDataSwiperCard extends Struct.ComponentSchema {
+  collectionName: 'components_content_data_swiper_cards';
+  info: {
+    displayName: 'SwiperCard';
+    icon: 'file';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'elements.swiper-card-item', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContentDataSwiperSimple extends Struct.ComponentSchema {
   collectionName: 'components_content_data_swiper_simples';
   info: {
@@ -258,6 +270,17 @@ export interface ContentSettingsMoodPicture extends Struct.ComponentSchema {
   collectionName: 'components_content_settings_mood_pictures';
   info: {
     displayName: 'MoodPicture';
+    icon: 'cog';
+  };
+  attributes: {
+    default: Schema.Attribute.String;
+  };
+}
+
+export interface ContentSettingsSwiperCard extends Struct.ComponentSchema {
+  collectionName: 'components_content_settings_swiper_cards';
+  info: {
+    displayName: 'SwiperCard';
     icon: 'cog';
   };
   attributes: {
@@ -414,6 +437,18 @@ export interface ContentMoodPicture extends Struct.ComponentSchema {
       'content-settings.mood-picture',
       false
     >;
+  };
+}
+
+export interface ContentSwiperCard extends Struct.ComponentSchema {
+  collectionName: 'components_content_swiper_cards';
+  info: {
+    displayName: 'SwiperCard';
+    icon: 'stack';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'content-data.swiper-card', false>;
+    settings: Schema.Attribute.Component<'content-settings.swiper-card', false>;
   };
 }
 
@@ -595,6 +630,21 @@ export interface ElementsSocial extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsSwiperCardItem extends Struct.ComponentSchema {
+  collectionName: 'components_elements_swiper_card_items';
+  info: {
+    displayName: 'SwiperCardItem';
+    icon: 'file';
+  };
+  attributes: {
+    date: Schema.Attribute.Date;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    info: Schema.Attribute.String;
+    link: Schema.Attribute.Component<'elements.link', false>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedFooter extends Struct.ComponentSchema {
   collectionName: 'components_shared_footers';
   info: {
@@ -694,6 +744,7 @@ declare module '@strapi/strapi' {
       'content-data.image-text': ContentDataImageText;
       'content-data.infos': ContentDataInfos;
       'content-data.mood-picture': ContentDataMoodPicture;
+      'content-data.swiper-card': ContentDataSwiperCard;
       'content-data.swiper-simple': ContentDataSwiperSimple;
       'content-data.text-element': ContentDataTextElement;
       'content-settings.accordions': ContentSettingsAccordions;
@@ -706,6 +757,7 @@ declare module '@strapi/strapi' {
       'content-settings.image-text': ContentSettingsImageText;
       'content-settings.infos': ContentSettingsInfos;
       'content-settings.mood-picture': ContentSettingsMoodPicture;
+      'content-settings.swiper-card': ContentSettingsSwiperCard;
       'content-settings.swiper-simple': ContentSettingsSwiperSimple;
       'content-settings.text-element': ContentSettingsTextElement;
       'content.accordions': ContentAccordions;
@@ -718,6 +770,7 @@ declare module '@strapi/strapi' {
       'content.image-text': ContentImageText;
       'content.infos': ContentInfos;
       'content.mood-picture': ContentMoodPicture;
+      'content.swiper-card': ContentSwiperCard;
       'content.swiper-simple': ContentSwiperSimple;
       'content.text-element': ContentTextElement;
       'elements.accordion': ElementsAccordion;
@@ -731,6 +784,7 @@ declare module '@strapi/strapi' {
       'elements.partner': ElementsPartner;
       'elements.simple-date': ElementsSimpleDate;
       'elements.social': ElementsSocial;
+      'elements.swiper-card-item': ElementsSwiperCardItem;
       'shared.footer': SharedFooter;
       'shared.header': SharedHeader;
       'shared.header-cta-buttons': SharedHeaderCtaButtons;
