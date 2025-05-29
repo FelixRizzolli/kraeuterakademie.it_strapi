@@ -136,9 +136,8 @@ export interface ContentDataTextElement extends Struct.ComponentSchema {
   };
 }
 
-export interface ContentSettingsAccordionsSettings
-  extends Struct.ComponentSchema {
-  collectionName: 'components_content_settings_accordions_settings';
+export interface ContentSettingsAccordions extends Struct.ComponentSchema {
+  collectionName: 'components_content_settings_accordions';
   info: {
     description: '';
     displayName: 'Accordions';
@@ -267,10 +266,7 @@ export interface ContentAccordions extends Struct.ComponentSchema {
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.accordions', false>;
-    settings: Schema.Attribute.Component<
-      'content-settings.accordions-settings',
-      false
-    >;
+    settings: Schema.Attribute.Component<'content-settings.accordions', false>;
   };
 }
 
@@ -625,7 +621,7 @@ declare module '@strapi/strapi' {
       'content-data.infos': ContentDataInfos;
       'content-data.mood-picture': ContentDataMoodPicture;
       'content-data.text-element': ContentDataTextElement;
-      'content-settings.accordions-settings': ContentSettingsAccordionsSettings;
+      'content-settings.accordions': ContentSettingsAccordions;
       'content-settings.animated-text': ContentSettingsAnimatedText;
       'content-settings.book-list': ContentSettingsBookList;
       'content-settings.course-list': ContentSettingsCourseList;
