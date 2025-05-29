@@ -628,6 +628,18 @@ export interface SharedSidebar extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTextBlock extends Struct.ComponentSchema {
+  collectionName: 'components_shared_text_blocks';
+  info: {
+    displayName: 'TextBlock';
+    icon: 'code';
+  };
+  attributes: {
+    slug: Schema.Attribute.String;
+    value: Schema.Attribute.Text;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -680,6 +692,7 @@ declare module '@strapi/strapi' {
       'shared.header-cta-buttons': SharedHeaderCtaButtons;
       'shared.seo': SharedSeo;
       'shared.sidebar': SharedSidebar;
+      'shared.text-block': SharedTextBlock;
     }
   }
 }

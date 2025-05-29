@@ -28,13 +28,18 @@
     },
     "header": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.header"
+      "component": "shared.header",
+      "repeatable": false
     },
     "footer": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.footer"
+      "component": "shared.footer",
+      "repeatable": false
+    },
+    "textblocks": {
+      "type": "component",
+      "component": "shared.text-block",
+      "repeatable": true
     }
   }
 }
