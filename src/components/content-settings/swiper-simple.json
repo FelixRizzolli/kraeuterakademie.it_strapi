@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_settings_swiper_simples",
+  "info": {
+    "displayName": "SwiperSimple",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

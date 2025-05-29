@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_swiper_simples",
+  "info": {
+    "displayName": "SwiperSimple",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "component": "content-data.swiper-simple",
+      "repeatable": false
+    },
+    "settings": {
+      "type": "component",
+      "component": "content-settings.swiper-simple",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

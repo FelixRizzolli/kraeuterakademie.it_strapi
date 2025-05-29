@@ -125,6 +125,21 @@ export interface ContentDataMoodPicture extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentDataSwiperSimple extends Struct.ComponentSchema {
+  collectionName: 'components_content_data_swiper_simples';
+  info: {
+    displayName: 'SwiperSimple';
+    icon: 'file';
+  };
+  attributes: {
+    images: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContentDataTextElement extends Struct.ComponentSchema {
   collectionName: 'components_content_data_text_elements';
   info: {
@@ -243,6 +258,17 @@ export interface ContentSettingsMoodPicture extends Struct.ComponentSchema {
   collectionName: 'components_content_settings_mood_pictures';
   info: {
     displayName: 'MoodPicture';
+    icon: 'cog';
+  };
+  attributes: {
+    default: Schema.Attribute.String;
+  };
+}
+
+export interface ContentSettingsSwiperSimple extends Struct.ComponentSchema {
+  collectionName: 'components_content_settings_swiper_simples';
+  info: {
+    displayName: 'SwiperSimple';
     icon: 'cog';
   };
   attributes: {
@@ -386,6 +412,21 @@ export interface ContentMoodPicture extends Struct.ComponentSchema {
     data: Schema.Attribute.Component<'content-data.mood-picture', false>;
     settings: Schema.Attribute.Component<
       'content-settings.mood-picture',
+      false
+    >;
+  };
+}
+
+export interface ContentSwiperSimple extends Struct.ComponentSchema {
+  collectionName: 'components_content_swiper_simples';
+  info: {
+    displayName: 'SwiperSimple';
+    icon: 'stack';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'content-data.swiper-simple', false>;
+    settings: Schema.Attribute.Component<
+      'content-settings.swiper-simple',
       false
     >;
   };
@@ -653,6 +694,7 @@ declare module '@strapi/strapi' {
       'content-data.image-text': ContentDataImageText;
       'content-data.infos': ContentDataInfos;
       'content-data.mood-picture': ContentDataMoodPicture;
+      'content-data.swiper-simple': ContentDataSwiperSimple;
       'content-data.text-element': ContentDataTextElement;
       'content-settings.accordions': ContentSettingsAccordions;
       'content-settings.animated-text': ContentSettingsAnimatedText;
@@ -664,6 +706,7 @@ declare module '@strapi/strapi' {
       'content-settings.image-text': ContentSettingsImageText;
       'content-settings.infos': ContentSettingsInfos;
       'content-settings.mood-picture': ContentSettingsMoodPicture;
+      'content-settings.swiper-simple': ContentSettingsSwiperSimple;
       'content-settings.text-element': ContentSettingsTextElement;
       'content.accordions': ContentAccordions;
       'content.animated-text': ContentAnimatedText;
@@ -675,6 +718,7 @@ declare module '@strapi/strapi' {
       'content.image-text': ContentImageText;
       'content.infos': ContentInfos;
       'content.mood-picture': ContentMoodPicture;
+      'content.swiper-simple': ContentSwiperSimple;
       'content.text-element': ContentTextElement;
       'elements.accordion': ElementsAccordion;
       'elements.address': ElementsAddress;
