@@ -137,6 +137,18 @@ export interface ContentDataSwiperCard extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentDataSwiperLarge extends Struct.ComponentSchema {
+  collectionName: 'components_content_data_swiper_larges';
+  info: {
+    displayName: 'SwiperLarge';
+    icon: 'file';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'elements.swiper-large-item', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContentDataSwiperSimple extends Struct.ComponentSchema {
   collectionName: 'components_content_data_swiper_simples';
   info: {
@@ -281,6 +293,17 @@ export interface ContentSettingsSwiperCard extends Struct.ComponentSchema {
   collectionName: 'components_content_settings_swiper_cards';
   info: {
     displayName: 'SwiperCard';
+    icon: 'cog';
+  };
+  attributes: {
+    default: Schema.Attribute.String;
+  };
+}
+
+export interface ContentSettingsSwiperLarge extends Struct.ComponentSchema {
+  collectionName: 'components_content_settings_swiper_larges';
+  info: {
+    displayName: 'SwiperLarge';
     icon: 'cog';
   };
   attributes: {
@@ -449,6 +472,20 @@ export interface ContentSwiperCard extends Struct.ComponentSchema {
   attributes: {
     data: Schema.Attribute.Component<'content-data.swiper-card', false>;
     settings: Schema.Attribute.Component<'content-settings.swiper-card', false>;
+  };
+}
+
+export interface ContentSwiperLarge extends Struct.ComponentSchema {
+  collectionName: 'components_content_swiper_larges';
+  info: {
+    displayName: 'SwiperLarge';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'content-data.swiper-large', false>;
+    settings: Schema.Attribute.Component<
+      'content-settings.swiper-large',
+      false
+    >;
   };
 }
 
@@ -645,6 +682,21 @@ export interface ElementsSwiperCardItem extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsSwiperLargeItem extends Struct.ComponentSchema {
+  collectionName: 'components_elements_swiper_large_items';
+  info: {
+    displayName: 'SwiperLargeItem';
+    icon: 'expand';
+  };
+  attributes: {
+    description: Schema.Attribute.Blocks;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    infos: Schema.Attribute.String;
+    links: Schema.Attribute.Component<'elements.link', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedFooter extends Struct.ComponentSchema {
   collectionName: 'components_shared_footers';
   info: {
@@ -745,6 +797,7 @@ declare module '@strapi/strapi' {
       'content-data.infos': ContentDataInfos;
       'content-data.mood-picture': ContentDataMoodPicture;
       'content-data.swiper-card': ContentDataSwiperCard;
+      'content-data.swiper-large': ContentDataSwiperLarge;
       'content-data.swiper-simple': ContentDataSwiperSimple;
       'content-data.text-element': ContentDataTextElement;
       'content-settings.accordions': ContentSettingsAccordions;
@@ -758,6 +811,7 @@ declare module '@strapi/strapi' {
       'content-settings.infos': ContentSettingsInfos;
       'content-settings.mood-picture': ContentSettingsMoodPicture;
       'content-settings.swiper-card': ContentSettingsSwiperCard;
+      'content-settings.swiper-large': ContentSettingsSwiperLarge;
       'content-settings.swiper-simple': ContentSettingsSwiperSimple;
       'content-settings.text-element': ContentSettingsTextElement;
       'content.accordions': ContentAccordions;
@@ -771,6 +825,7 @@ declare module '@strapi/strapi' {
       'content.infos': ContentInfos;
       'content.mood-picture': ContentMoodPicture;
       'content.swiper-card': ContentSwiperCard;
+      'content.swiper-large': ContentSwiperLarge;
       'content.swiper-simple': ContentSwiperSimple;
       'content.text-element': ContentTextElement;
       'elements.accordion': ElementsAccordion;
@@ -785,6 +840,7 @@ declare module '@strapi/strapi' {
       'elements.simple-date': ElementsSimpleDate;
       'elements.social': ElementsSocial;
       'elements.swiper-card-item': ElementsSwiperCardItem;
+      'elements.swiper-large-item': ElementsSwiperLargeItem;
       'shared.footer': SharedFooter;
       'shared.header': SharedHeader;
       'shared.header-cta-buttons': SharedHeaderCtaButtons;

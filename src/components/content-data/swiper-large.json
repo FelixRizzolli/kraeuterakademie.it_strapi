@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_data_swiper_larges",
+  "info": {
+    "displayName": "SwiperLarge",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "elements.swiper-large-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

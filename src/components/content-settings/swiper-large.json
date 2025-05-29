@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_settings_swiper_larges",
+  "info": {
+    "displayName": "SwiperLarge",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
