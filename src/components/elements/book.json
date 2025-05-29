@@ -29,8 +29,8 @@
     },
     "link": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     }
   }
 }

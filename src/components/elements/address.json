@@ -1,7 +1,8 @@
 {
   "collectionName": "components_elements_addresses",
   "info": {
-    "displayName": "Address"
+    "displayName": "Address",
+    "icon": "store"
   },
   "options": {},
   "attributes": {

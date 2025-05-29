@@ -2,19 +2,20 @@
   "collectionName": "components_content_image_texts",
   "info": {
     "displayName": "ImageText",
-    "description": ""
+    "description": "",
+    "icon": "picture"
   },
   "options": {},
   "attributes": {
     "data": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-data.image-text"
+      "component": "content-data.image-text",
+      "repeatable": false
     },
     "settings": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-settings.image-text"
+      "component": "content-settings.image-text",
+      "repeatable": false
     }
   }
 }

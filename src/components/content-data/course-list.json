@@ -2,7 +2,7 @@
   "collectionName": "components_content_data_course_lists",
   "info": {
     "displayName": "CourseList",
-    "icon": "calendar",
+    "icon": "file",
     "description": ""
   },
   "options": {},
@@ -11,10 +11,9 @@
       "type": "string"
     },
     "courses": {
-      "displayName": "course",
       "type": "component",
-      "repeatable": true,
-      "component": "elements.course"
+      "component": "elements.course",
+      "repeatable": true
     }
   }
 }

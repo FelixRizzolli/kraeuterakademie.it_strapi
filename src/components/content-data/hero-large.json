@@ -2,7 +2,7 @@
   "collectionName": "components_content_data_hero_bigs",
   "info": {
     "displayName": "HeroLarge",
-    "icon": "picture"
+    "icon": "file"
   },
   "options": {},
   "attributes": {
@@ -10,14 +10,14 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

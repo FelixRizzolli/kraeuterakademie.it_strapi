@@ -2,7 +2,7 @@
   "collectionName": "components_elements_image_links",
   "info": {
     "displayName": "ImageLink",
-    "icon": "attachment"
+    "icon": "link"
   },
   "options": {},
   "attributes": {

@@ -2,24 +2,25 @@
   "collectionName": "components_shared_headers",
   "info": {
     "displayName": "Header",
-    "description": ""
+    "description": "",
+    "icon": "layout"
   },
   "options": {},
   "attributes": {
     "links": {
       "type": "component",
-      "repeatable": true,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": true
     },
     "sidebar": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.sidebar"
+      "component": "shared.sidebar",
+      "repeatable": false
     },
     "ctaButtons": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.header-cta-buttons"
+      "component": "shared.header-cta-buttons",
+      "repeatable": false
     }
   }
 }

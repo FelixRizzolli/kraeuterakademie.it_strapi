@@ -2,14 +2,15 @@
   "collectionName": "components_shared_header_cta_buttons",
   "info": {
     "displayName": "HeaderCtaButtons",
-    "description": ""
+    "description": "",
+    "icon": "layout"
   },
   "options": {},
   "attributes": {
     "link": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     },
     "menu": {
       "type": "string"

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_content_data_book_lists",
   "info": {
-    "displayName": "BookList"
+    "displayName": "BookList",
+    "icon": "file"
   },
   "options": {},
   "attributes": {
@@ -10,8 +11,8 @@
     },
     "books": {
       "type": "component",
-      "repeatable": true,
-      "component": "elements.book"
+      "component": "elements.book",
+      "repeatable": true
     }
   }
 }

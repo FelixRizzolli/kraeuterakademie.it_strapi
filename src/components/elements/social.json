@@ -1,14 +1,15 @@
 {
   "collectionName": "components_elements_socials",
   "info": {
-    "displayName": "Social"
+    "displayName": "Social",
+    "icon": "message"
   },
   "options": {},
   "attributes": {
     "link": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     },
     "icon": {
       "type": "enumeration",
@@ -18,14 +19,14 @@
       ]
     },
     "backgroundImage": {
+      "type": "media",
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

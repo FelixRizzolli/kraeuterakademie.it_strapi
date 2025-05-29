@@ -1,7 +1,8 @@
 {
   "collectionName": "components_elements_contacts",
   "info": {
-    "displayName": "Contact"
+    "displayName": "Contact",
+    "icon": "envelop"
   },
   "options": {},
   "attributes": {
@@ -10,13 +11,13 @@
     },
     "phone": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     },
     "mail": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     }
   }
 }

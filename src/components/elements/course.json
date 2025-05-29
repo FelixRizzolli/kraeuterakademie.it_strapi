@@ -1,7 +1,7 @@
 {
   "collectionName": "components_elements_courses",
   "info": {
-    "displayName": "course",
+    "displayName": "Course",
     "icon": "calendar",
     "description": ""
   },
@@ -18,14 +18,13 @@
     },
     "link": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     },
     "dates": {
-      "displayName": "SimpleDate",
       "type": "component",
-      "repeatable": true,
-      "component": "elements.simple-date"
+      "component": "elements.simple-date",
+      "repeatable": true
     }
   }
 }

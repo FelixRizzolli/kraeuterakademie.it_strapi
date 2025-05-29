@@ -1,19 +1,20 @@
 {
   "collectionName": "components_content_text_elements",
   "info": {
-    "displayName": "TextElement"
+    "displayName": "TextElement",
+    "icon": "bold"
   },
   "options": {},
   "attributes": {
     "data": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-data.text-element"
+      "component": "content-data.text-element",
+      "repeatable": false
     },
     "settings": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-settings.text-element"
+      "component": "content-settings.text-element",
+      "repeatable": false
     }
   }
 }

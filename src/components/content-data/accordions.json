@@ -2,7 +2,7 @@
   "collectionName": "components_content_data_accordions",
   "info": {
     "displayName": "Accordions",
-    "icon": "bulletList",
+    "icon": "file",
     "description": ""
   },
   "options": {},
@@ -11,10 +11,9 @@
       "type": "string"
     },
     "accordions": {
-      "displayName": "Accordion",
       "type": "component",
-      "repeatable": true,
-      "component": "elements.accordion"
+      "component": "elements.accordion",
+      "repeatable": true
     }
   }
 }

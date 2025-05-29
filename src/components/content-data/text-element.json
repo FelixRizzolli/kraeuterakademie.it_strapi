@@ -2,7 +2,7 @@
   "collectionName": "components_content_data_text_elements",
   "info": {
     "displayName": "TextElement",
-    "icon": "layer"
+    "icon": "file"
   },
   "options": {},
   "attributes": {
@@ -14,8 +14,8 @@
     },
     "link": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     }
   }
 }

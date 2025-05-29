@@ -1,19 +1,20 @@
 {
   "collectionName": "components_content_hero_smalls",
   "info": {
-    "displayName": "HeroSmall"
+    "displayName": "HeroSmall",
+    "icon": "crop"
   },
   "options": {},
   "attributes": {
     "data": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-data.hero-small"
+      "component": "content-data.hero-small",
+      "repeatable": false
     },
     "settings": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-settings.hero-small"
+      "component": "content-settings.hero-small",
+      "repeatable": false
     }
   }
 }

@@ -1,19 +1,20 @@
 {
   "collectionName": "components_content_accordions",
   "info": {
-    "displayName": "Accordions"
+    "displayName": "Accordions",
+    "icon": "bulletList"
   },
   "options": {},
   "attributes": {
     "data": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-data.accordions"
+      "component": "content-data.accordions",
+      "repeatable": false
     },
     "settings": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-settings.accordions"
+      "component": "content-settings.accordions",
+      "repeatable": false
     }
   }
 }

@@ -1,19 +1,20 @@
 {
   "collectionName": "components_content_course_lists",
   "info": {
-    "displayName": "CourseList"
+    "displayName": "CourseList",
+    "icon": "calendar"
   },
   "options": {},
   "attributes": {
     "data": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-data.course-list"
+      "component": "content-data.course-list",
+      "repeatable": false
     },
     "settings": {
       "type": "component",
-      "repeatable": false,
-      "component": "content-settings.course-list"
+      "component": "content-settings.course-list",
+      "repeatable": false
     }
   }
 }

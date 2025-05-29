@@ -5,7 +5,7 @@ export interface ContentDataAccordions extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'Accordions';
-    icon: 'bulletList';
+    icon: 'file';
   };
   attributes: {
     accordions: Schema.Attribute.Component<'elements.accordion', true>;
@@ -17,7 +17,7 @@ export interface ContentDataAnimatedText extends Struct.ComponentSchema {
   collectionName: 'components_content_data_animated_texts';
   info: {
     displayName: 'AnimatedText';
-    icon: 'underline';
+    icon: 'file';
   };
   attributes: {
     text: Schema.Attribute.Text;
@@ -28,6 +28,7 @@ export interface ContentDataBookList extends Struct.ComponentSchema {
   collectionName: 'components_content_data_book_lists';
   info: {
     displayName: 'BookList';
+    icon: 'file';
   };
   attributes: {
     books: Schema.Attribute.Component<'elements.book', true>;
@@ -40,7 +41,7 @@ export interface ContentDataCourseList extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'CourseList';
-    icon: 'calendar';
+    icon: 'file';
   };
   attributes: {
     courses: Schema.Attribute.Component<'elements.course', true>;
@@ -52,7 +53,7 @@ export interface ContentDataHeroLarge extends Struct.ComponentSchema {
   collectionName: 'components_content_data_hero_bigs';
   info: {
     displayName: 'HeroLarge';
-    icon: 'picture';
+    icon: 'file';
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -64,7 +65,7 @@ export interface ContentDataHeroSmall extends Struct.ComponentSchema {
   collectionName: 'components_content_data_hero_smalls';
   info: {
     displayName: 'HeroSmall';
-    icon: 'picture';
+    icon: 'file';
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -89,7 +90,7 @@ export interface ContentDataImageText extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'ImageText';
-    icon: 'picture';
+    icon: 'file';
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -105,7 +106,7 @@ export interface ContentDataInfos extends Struct.ComponentSchema {
   collectionName: 'components_content_data_infos';
   info: {
     displayName: 'Infos';
-    icon: 'information';
+    icon: 'file';
   };
   attributes: {
     infos: Schema.Attribute.Component<'elements.info', true>;
@@ -117,6 +118,7 @@ export interface ContentDataMoodPicture extends Struct.ComponentSchema {
   collectionName: 'components_content_data_mood_pictures';
   info: {
     displayName: 'MoodPicture';
+    icon: 'file';
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -127,7 +129,7 @@ export interface ContentDataTextElement extends Struct.ComponentSchema {
   collectionName: 'components_content_data_text_elements';
   info: {
     displayName: 'TextElement';
-    icon: 'layer';
+    icon: 'file';
   };
   attributes: {
     content: Schema.Attribute.Blocks;
@@ -163,7 +165,7 @@ export interface ContentSettingsBookList extends Struct.ComponentSchema {
   collectionName: 'components_content_settings_book_lists';
   info: {
     displayName: 'BookList';
-    icon: 'book';
+    icon: 'cog';
   };
   attributes: {
     default: Schema.Attribute.String;
@@ -263,6 +265,7 @@ export interface ContentAccordions extends Struct.ComponentSchema {
   collectionName: 'components_content_accordions';
   info: {
     displayName: 'Accordions';
+    icon: 'bulletList';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.accordions', false>;
@@ -274,6 +277,7 @@ export interface ContentAnimatedText extends Struct.ComponentSchema {
   collectionName: 'components_content_animated_texts';
   info: {
     displayName: 'AnimatedText';
+    icon: 'underline';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.animated-text', false>;
@@ -300,6 +304,7 @@ export interface ContentCourseList extends Struct.ComponentSchema {
   collectionName: 'components_content_course_lists';
   info: {
     displayName: 'CourseList';
+    icon: 'calendar';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.course-list', false>;
@@ -311,6 +316,7 @@ export interface ContentHeroLarge extends Struct.ComponentSchema {
   collectionName: 'components_content_hero_bigs';
   info: {
     displayName: 'HeroLarge';
+    icon: 'expand';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.hero-large', false>;
@@ -322,6 +328,7 @@ export interface ContentHeroSmall extends Struct.ComponentSchema {
   collectionName: 'components_content_hero_smalls';
   info: {
     displayName: 'HeroSmall';
+    icon: 'crop';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.hero-small', false>;
@@ -349,6 +356,7 @@ export interface ContentImageText extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'ImageText';
+    icon: 'picture';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.image-text', false>;
@@ -360,6 +368,7 @@ export interface ContentInfos extends Struct.ComponentSchema {
   collectionName: 'components_content_infos';
   info: {
     displayName: 'Infos';
+    icon: 'information';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.infos', false>;
@@ -371,6 +380,7 @@ export interface ContentMoodPicture extends Struct.ComponentSchema {
   collectionName: 'components_content_mood_pictures';
   info: {
     displayName: 'MoodPicture';
+    icon: 'picture';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.mood-picture', false>;
@@ -385,6 +395,7 @@ export interface ContentTextElement extends Struct.ComponentSchema {
   collectionName: 'components_content_text_elements';
   info: {
     displayName: 'TextElement';
+    icon: 'bold';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.text-element', false>;
@@ -412,6 +423,7 @@ export interface ElementsAddress extends Struct.ComponentSchema {
   collectionName: 'components_elements_addresses';
   info: {
     displayName: 'Address';
+    icon: 'store';
   };
   attributes: {
     name: Schema.Attribute.String;
@@ -440,6 +452,7 @@ export interface ElementsContact extends Struct.ComponentSchema {
   collectionName: 'components_elements_contacts';
   info: {
     displayName: 'Contact';
+    icon: 'envelop';
   };
   attributes: {
     mail: Schema.Attribute.Component<'elements.link', false>;
@@ -452,7 +465,7 @@ export interface ElementsCourse extends Struct.ComponentSchema {
   collectionName: 'components_elements_courses';
   info: {
     description: '';
-    displayName: 'course';
+    displayName: 'Course';
     icon: 'calendar';
   };
   attributes: {
@@ -468,7 +481,7 @@ export interface ElementsImageLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_image_links';
   info: {
     displayName: 'ImageLink';
-    icon: 'attachment';
+    icon: 'link';
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -480,6 +493,7 @@ export interface ElementsInfo extends Struct.ComponentSchema {
   collectionName: 'components_elements_infos';
   info: {
     displayName: 'Info';
+    icon: 'information';
   };
   attributes: {
     text: Schema.Attribute.Blocks;
@@ -491,6 +505,7 @@ export interface ElementsLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_links';
   info: {
     displayName: 'Link';
+    icon: 'link';
   };
   attributes: {
     href: Schema.Attribute.String;
@@ -502,6 +517,7 @@ export interface ElementsPartner extends Struct.ComponentSchema {
   collectionName: 'components_elements_partners';
   info: {
     displayName: 'Partner';
+    icon: 'user';
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -527,6 +543,7 @@ export interface ElementsSocial extends Struct.ComponentSchema {
   collectionName: 'components_elements_socials';
   info: {
     displayName: 'Social';
+    icon: 'message';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<
@@ -542,6 +559,7 @@ export interface SharedFooter extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'Footer';
+    icon: 'layout';
   };
   attributes: {
     address: Schema.Attribute.Component<'elements.address', false>;
@@ -559,6 +577,7 @@ export interface SharedHeader extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'Header';
+    icon: 'layout';
   };
   attributes: {
     ctaButtons: Schema.Attribute.Component<'shared.header-cta-buttons', false>;
@@ -572,6 +591,7 @@ export interface SharedHeaderCtaButtons extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'HeaderCtaButtons';
+    icon: 'layout';
   };
   attributes: {
     link: Schema.Attribute.Component<'elements.link', false>;
@@ -584,7 +604,7 @@ export interface SharedSeo extends Struct.ComponentSchema {
   info: {
     description: '';
     displayName: 'SEO';
-    icon: 'search';
+    icon: 'layout';
   };
   attributes: {
     follow: Schema.Attribute.Boolean;
@@ -600,6 +620,7 @@ export interface SharedSidebar extends Struct.ComponentSchema {
   collectionName: 'components_shared_sidebars';
   info: {
     displayName: 'Sidebar';
+    icon: 'layout';
   };
   attributes: {
     links: Schema.Attribute.Component<'elements.link', true>;

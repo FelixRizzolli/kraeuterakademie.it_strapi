@@ -2,7 +2,7 @@
   "collectionName": "components_content_data_image_texts",
   "info": {
     "displayName": "ImageText",
-    "icon": "picture",
+    "icon": "file",
     "description": ""
   },
   "options": {},
@@ -32,8 +32,8 @@
     },
     "link": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     }
   }
 }
