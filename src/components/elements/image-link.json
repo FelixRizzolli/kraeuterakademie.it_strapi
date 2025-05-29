@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_image_links",
+  "info": {
+    "displayName": "ImageLink",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

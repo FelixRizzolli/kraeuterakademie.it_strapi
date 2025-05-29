@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_content_settings_highlighted_links",
+  "info": {
+    "displayName": "HighlightedLinks",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "default": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

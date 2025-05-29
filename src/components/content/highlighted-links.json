@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_highlighted_links",
+  "info": {
+    "displayName": "HighlightedLinks",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "component": "content-data.highlighted-links",
+      "repeatable": false
+    },
+    "settings": {
+      "type": "component",
+      "component": "content-settings.highlighted-links",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

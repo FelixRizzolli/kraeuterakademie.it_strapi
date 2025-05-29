@@ -73,6 +73,17 @@ export interface ContentDataHeroSmall extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentDataHighlightedLinks extends Struct.ComponentSchema {
+  collectionName: 'components_content_data_highlighted_links';
+  info: {
+    displayName: 'HighlightedLinks';
+    icon: 'file';
+  };
+  attributes: {
+    imageLinks: Schema.Attribute.Component<'elements.image-link', true>;
+  };
+}
+
 export interface ContentDataImageText extends Struct.ComponentSchema {
   collectionName: 'components_content_data_image_texts';
   info: {
@@ -186,6 +197,18 @@ export interface ContentSettingsHeroSmall extends Struct.ComponentSchema {
   collectionName: 'components_content_settings_hero_smalls';
   info: {
     displayName: 'HeroSmall';
+    icon: 'cog';
+  };
+  attributes: {
+    default: Schema.Attribute.String;
+  };
+}
+
+export interface ContentSettingsHighlightedLinks
+  extends Struct.ComponentSchema {
+  collectionName: 'components_content_settings_highlighted_links';
+  info: {
+    displayName: 'HighlightedLinks';
     icon: 'cog';
   };
   attributes: {
@@ -310,6 +333,21 @@ export interface ContentHeroSmall extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentHighlightedLinks extends Struct.ComponentSchema {
+  collectionName: 'components_content_highlighted_links';
+  info: {
+    displayName: 'HighlightedLinks';
+    icon: 'link';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'content-data.highlighted-links', false>;
+    settings: Schema.Attribute.Component<
+      'content-settings.highlighted-links',
+      false
+    >;
+  };
+}
+
 export interface ContentImageText extends Struct.ComponentSchema {
   collectionName: 'components_content_image_texts';
   info: {
@@ -427,6 +465,18 @@ export interface ElementsCourse extends Struct.ComponentSchema {
     link: Schema.Attribute.Component<'elements.link', false>;
     place: Schema.Attribute.String;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsImageLink extends Struct.ComponentSchema {
+  collectionName: 'components_elements_image_links';
+  info: {
+    displayName: 'ImageLink';
+    icon: 'attachment';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    link: Schema.Attribute.Component<'elements.link', false>;
   };
 }
 
@@ -570,6 +620,7 @@ declare module '@strapi/strapi' {
       'content-data.course-list': ContentDataCourseList;
       'content-data.hero-large': ContentDataHeroLarge;
       'content-data.hero-small': ContentDataHeroSmall;
+      'content-data.highlighted-links': ContentDataHighlightedLinks;
       'content-data.image-text': ContentDataImageText;
       'content-data.infos': ContentDataInfos;
       'content-data.mood-picture': ContentDataMoodPicture;
@@ -580,6 +631,7 @@ declare module '@strapi/strapi' {
       'content-settings.course-list': ContentSettingsCourseList;
       'content-settings.hero-large': ContentSettingsHeroLarge;
       'content-settings.hero-small': ContentSettingsHeroSmall;
+      'content-settings.highlighted-links': ContentSettingsHighlightedLinks;
       'content-settings.image-text': ContentSettingsImageText;
       'content-settings.infos': ContentSettingsInfos;
       'content-settings.mood-picture': ContentSettingsMoodPicture;
@@ -590,6 +642,7 @@ declare module '@strapi/strapi' {
       'content.course-list': ContentCourseList;
       'content.hero-large': ContentHeroLarge;
       'content.hero-small': ContentHeroSmall;
+      'content.highlighted-links': ContentHighlightedLinks;
       'content.image-text': ContentImageText;
       'content.infos': ContentInfos;
       'content.mood-picture': ContentMoodPicture;
@@ -599,6 +652,7 @@ declare module '@strapi/strapi' {
       'elements.book': ElementsBook;
       'elements.contact': ElementsContact;
       'elements.course': ElementsCourse;
+      'elements.image-link': ElementsImageLink;
       'elements.info': ElementsInfo;
       'elements.link': ElementsLink;
       'elements.partner': ElementsPartner;

@@ -429,6 +429,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'content.animated-text',
         'content.accordions',
         'content.book-list',
+        'content.highlighted-links',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

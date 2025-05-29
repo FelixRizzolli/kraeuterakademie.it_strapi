@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_data_highlighted_links",
+  "info": {
+    "displayName": "HighlightedLinks",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "imageLinks": {
+      "type": "component",
+      "component": "elements.image-link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
