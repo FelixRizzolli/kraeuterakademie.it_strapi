@@ -33,7 +33,10 @@
         "content.animated-text",
         "content.accordions",
         "content.book-list",
-        "content.highlighted-links"
+        "content.highlighted-links",
+        "content.swiper-simple",
+        "content.swiper-large",
+        "content.swiper-card"
       ]
     }
   }

@@ -431,6 +431,9 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'content.accordions',
         'content.book-list',
         'content.highlighted-links',
+        'content.swiper-simple',
+        'content.swiper-large',
+        'content.swiper-card',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
