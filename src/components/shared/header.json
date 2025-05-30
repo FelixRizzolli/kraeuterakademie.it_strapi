@@ -16,11 +16,6 @@
       "type": "component",
       "component": "shared.sidebar",
       "repeatable": false
-    },
-    "ctaButtons": {
-      "type": "component",
-      "component": "shared.header-cta-buttons",
-      "repeatable": false
     }
   }
 }
