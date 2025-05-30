@@ -1,7 +1,8 @@
 {
   "collectionName": "components_content_swiper_larges",
   "info": {
-    "displayName": "SwiperLarge"
+    "displayName": "SwiperLarge",
+    "icon": "stack"
   },
   "options": {},
   "attributes": {

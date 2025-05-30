@@ -479,6 +479,7 @@ export interface ContentSwiperLarge extends Struct.ComponentSchema {
   collectionName: 'components_content_swiper_larges';
   info: {
     displayName: 'SwiperLarge';
+    icon: 'stack';
   };
   attributes: {
     data: Schema.Attribute.Component<'content-data.swiper-large', false>;
@@ -686,7 +687,7 @@ export interface ElementsSwiperLargeItem extends Struct.ComponentSchema {
   collectionName: 'components_elements_swiper_large_items';
   info: {
     displayName: 'SwiperLargeItem';
-    icon: 'expand';
+    icon: 'file';
   };
   attributes: {
     description: Schema.Attribute.Blocks;
