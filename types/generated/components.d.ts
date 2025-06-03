@@ -350,18 +350,22 @@ export interface ContentSettingsSpacingSettings extends Struct.ComponentSchema {
     marginBottom: Schema.Attribute.Enumeration<
       ['none', 'small', 'medium', 'large', 'xlarge']
     > &
+      Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'large'>;
     marginTop: Schema.Attribute.Enumeration<
       ['none', 'small', 'medium', 'large', 'xlarge']
     > &
+      Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'none'>;
     paddingBottom: Schema.Attribute.Enumeration<
       ['none', 'small', 'medium', 'large', 'xlarge']
     > &
+      Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'none'>;
     paddingTop: Schema.Attribute.Enumeration<
       ['none', 'small', 'medium', 'large', 'xlarge']
     > &
+      Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'none'>;
   };
 }
