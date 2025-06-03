@@ -9,7 +9,8 @@
     "spacing": {
       "type": "component",
       "component": "content-settings.spacing-settings",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
     },
     "style": {
       "type": "enumeration",

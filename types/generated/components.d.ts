@@ -188,7 +188,8 @@ export interface ContentSettingsAccordions extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
@@ -205,7 +206,8 @@ export interface ContentSettingsAnimatedText extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'dark'>;
@@ -222,7 +224,8 @@ export interface ContentSettingsBookList extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'dark'>;
@@ -239,7 +242,8 @@ export interface ContentSettingsCourseList extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
@@ -256,7 +260,8 @@ export interface ContentSettingsHeroLarge extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -270,7 +275,8 @@ export interface ContentSettingsHeroSmall extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -285,7 +291,8 @@ export interface ContentSettingsHighlightedLinks
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
@@ -302,7 +309,8 @@ export interface ContentSettingsImageText extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
@@ -319,7 +327,8 @@ export interface ContentSettingsInfos extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'dark'>;
@@ -336,7 +345,8 @@ export interface ContentSettingsMoodPicture extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -380,7 +390,8 @@ export interface ContentSettingsSwiperCard extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
@@ -397,7 +408,8 @@ export interface ContentSettingsSwiperLarge extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
@@ -414,7 +426,8 @@ export interface ContentSettingsSwiperSimple extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
@@ -431,7 +444,8 @@ export interface ContentSettingsTextElement extends Struct.ComponentSchema {
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
     style: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'light'>;
