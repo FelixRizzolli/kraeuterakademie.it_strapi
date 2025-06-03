@@ -623,6 +623,9 @@ export interface ElementsLink extends Struct.ComponentSchema {
   };
   attributes: {
     href: Schema.Attribute.String;
+    target: Schema.Attribute.Enumeration<
+      ['_self', '_blank', '_parent', '_top', '_unfencedTop']
+    >;
     text: Schema.Attribute.String;
   };
 }
