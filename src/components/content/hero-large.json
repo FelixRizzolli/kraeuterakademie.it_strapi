@@ -9,12 +9,14 @@
     "data": {
       "type": "component",
       "component": "content-data.hero-large",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
     },
     "settings": {
       "type": "component",
       "component": "content-settings.hero-large",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
     }
   }
 }

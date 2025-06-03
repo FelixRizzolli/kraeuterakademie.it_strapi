@@ -8,13 +8,15 @@
   "attributes": {
     "data": {
       "type": "component",
+      "component": "content-data.book-list",
       "repeatable": false,
-      "component": "content-data.book-list"
+      "required": true
     },
     "settings": {
       "type": "component",
+      "component": "content-settings.book-list",
       "repeatable": false,
-      "component": "content-settings.book-list"
+      "required": true
     }
   }
 }

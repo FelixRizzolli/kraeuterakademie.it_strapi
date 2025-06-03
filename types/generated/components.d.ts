@@ -441,8 +441,10 @@ export interface ContentAccordions extends Struct.ComponentSchema {
     icon: 'bulletList';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.accordions', false>;
-    settings: Schema.Attribute.Component<'content-settings.accordions', false>;
+    data: Schema.Attribute.Component<'content-data.accordions', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<'content-settings.accordions', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -453,11 +455,13 @@ export interface ContentAnimatedText extends Struct.ComponentSchema {
     icon: 'underline';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.animated-text', false>;
+    data: Schema.Attribute.Component<'content-data.animated-text', false> &
+      Schema.Attribute.Required;
     settings: Schema.Attribute.Component<
       'content-settings.animated-text',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -468,8 +472,10 @@ export interface ContentBookList extends Struct.ComponentSchema {
     icon: 'book';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.book-list', false>;
-    settings: Schema.Attribute.Component<'content-settings.book-list', false>;
+    data: Schema.Attribute.Component<'content-data.book-list', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<'content-settings.book-list', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -480,8 +486,13 @@ export interface ContentCourseList extends Struct.ComponentSchema {
     icon: 'calendar';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.course-list', false>;
-    settings: Schema.Attribute.Component<'content-settings.course-list', false>;
+    data: Schema.Attribute.Component<'content-data.course-list', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<
+      'content-settings.course-list',
+      false
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -492,8 +503,10 @@ export interface ContentHeroLarge extends Struct.ComponentSchema {
     icon: 'expand';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.hero-large', false>;
-    settings: Schema.Attribute.Component<'content-settings.hero-large', false>;
+    data: Schema.Attribute.Component<'content-data.hero-large', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<'content-settings.hero-large', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -504,8 +517,10 @@ export interface ContentHeroSmall extends Struct.ComponentSchema {
     icon: 'crop';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.hero-small', false>;
-    settings: Schema.Attribute.Component<'content-settings.hero-small', false>;
+    data: Schema.Attribute.Component<'content-data.hero-small', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<'content-settings.hero-small', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -516,11 +531,13 @@ export interface ContentHighlightedLinks extends Struct.ComponentSchema {
     icon: 'link';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.highlighted-links', false>;
+    data: Schema.Attribute.Component<'content-data.highlighted-links', false> &
+      Schema.Attribute.Required;
     settings: Schema.Attribute.Component<
       'content-settings.highlighted-links',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -532,8 +549,10 @@ export interface ContentImageText extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.image-text', false>;
-    settings: Schema.Attribute.Component<'content-settings.image-text', false>;
+    data: Schema.Attribute.Component<'content-data.image-text', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<'content-settings.image-text', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -544,8 +563,10 @@ export interface ContentInfos extends Struct.ComponentSchema {
     icon: 'information';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.infos', false>;
-    settings: Schema.Attribute.Component<'content-settings.infos', false>;
+    data: Schema.Attribute.Component<'content-data.infos', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<'content-settings.infos', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -556,11 +577,13 @@ export interface ContentMoodPicture extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.mood-picture', false>;
+    data: Schema.Attribute.Component<'content-data.mood-picture', false> &
+      Schema.Attribute.Required;
     settings: Schema.Attribute.Component<
       'content-settings.mood-picture',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -571,8 +594,13 @@ export interface ContentSwiperCard extends Struct.ComponentSchema {
     icon: 'stack';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.swiper-card', false>;
-    settings: Schema.Attribute.Component<'content-settings.swiper-card', false>;
+    data: Schema.Attribute.Component<'content-data.swiper-card', false> &
+      Schema.Attribute.Required;
+    settings: Schema.Attribute.Component<
+      'content-settings.swiper-card',
+      false
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -583,11 +611,13 @@ export interface ContentSwiperLarge extends Struct.ComponentSchema {
     icon: 'stack';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.swiper-large', false>;
+    data: Schema.Attribute.Component<'content-data.swiper-large', false> &
+      Schema.Attribute.Required;
     settings: Schema.Attribute.Component<
       'content-settings.swiper-large',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -598,11 +628,13 @@ export interface ContentSwiperSimple extends Struct.ComponentSchema {
     icon: 'stack';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.swiper-simple', false>;
+    data: Schema.Attribute.Component<'content-data.swiper-simple', false> &
+      Schema.Attribute.Required;
     settings: Schema.Attribute.Component<
       'content-settings.swiper-simple',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 
@@ -613,11 +645,13 @@ export interface ContentTextElement extends Struct.ComponentSchema {
     icon: 'bold';
   };
   attributes: {
-    data: Schema.Attribute.Component<'content-data.text-element', false>;
+    data: Schema.Attribute.Component<'content-data.text-element', false> &
+      Schema.Attribute.Required;
     settings: Schema.Attribute.Component<
       'content-settings.text-element',
       false
-    >;
+    > &
+      Schema.Attribute.Required;
   };
 }
 

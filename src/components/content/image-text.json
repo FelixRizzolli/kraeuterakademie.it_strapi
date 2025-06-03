@@ -10,12 +10,14 @@
     "data": {
       "type": "component",
       "component": "content-data.image-text",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
     },
     "settings": {
       "type": "component",
       "component": "content-settings.image-text",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
     }
   }
 }
