@@ -11,7 +11,7 @@
       "component": "content-settings.spacing-settings",
       "repeatable": false
     },
-    "color": {
+    "style": {
       "type": "enumeration",
       "required": true,
       "default": "light",
