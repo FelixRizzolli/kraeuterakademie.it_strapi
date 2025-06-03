@@ -598,6 +598,7 @@ export interface ElementsImageLink extends Struct.ComponentSchema {
     icon: 'link';
   };
   attributes: {
+    entryTitle: Schema.Attribute.String & Schema.Attribute.Private;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     link: Schema.Attribute.Component<'elements.link', false>;
   };
@@ -637,6 +638,7 @@ export interface ElementsPartner extends Struct.ComponentSchema {
     icon: 'user';
   };
   attributes: {
+    entryTitle: Schema.Attribute.String & Schema.Attribute.Private;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     link: Schema.Attribute.Component<'elements.link', false>;
   };

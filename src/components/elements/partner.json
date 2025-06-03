@@ -6,6 +6,10 @@
   },
   "options": {},
   "attributes": {
+    "entryTitle": {
+      "type": "string",
+      "private": true
+    },
     "link": {
       "type": "component",
       "component": "elements.link",
