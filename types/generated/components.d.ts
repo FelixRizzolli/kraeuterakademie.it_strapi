@@ -742,9 +742,13 @@ export interface SharedSeo extends Struct.ComponentSchema {
     icon: 'layout';
   };
   attributes: {
-    follow: Schema.Attribute.Boolean;
+    follow: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<true>;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    index: Schema.Attribute.Boolean;
+    index: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<true>;
     metaDescription: Schema.Attribute.String;
     metaKeywords: Schema.Attribute.String;
     metaTitle: Schema.Attribute.String;
