@@ -185,7 +185,10 @@ export interface ContentSettingsAccordions extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -196,7 +199,10 @@ export interface ContentSettingsAnimatedText extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -207,7 +213,10 @@ export interface ContentSettingsBookList extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -218,7 +227,10 @@ export interface ContentSettingsCourseList extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -229,7 +241,10 @@ export interface ContentSettingsHeroLarge extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -240,7 +255,10 @@ export interface ContentSettingsHeroSmall extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -252,7 +270,10 @@ export interface ContentSettingsHighlightedLinks
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -263,7 +284,10 @@ export interface ContentSettingsImageText extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -274,7 +298,10 @@ export interface ContentSettingsInfos extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -285,7 +312,36 @@ export interface ContentSettingsMoodPicture extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
+  };
+}
+
+export interface ContentSettingsSpacingSettings extends Struct.ComponentSchema {
+  collectionName: 'components_content_settings_spacing_settings';
+  info: {
+    displayName: 'SpacingSettings';
+    icon: 'cog';
+  };
+  attributes: {
+    marginBottom: Schema.Attribute.Enumeration<
+      ['none', 'small', 'medium', 'large', 'xlarge']
+    > &
+      Schema.Attribute.DefaultTo<'large'>;
+    marginTop: Schema.Attribute.Enumeration<
+      ['none', 'small', 'medium', 'large', 'xlarge']
+    > &
+      Schema.Attribute.DefaultTo<'none'>;
+    paddingBottom: Schema.Attribute.Enumeration<
+      ['none', 'small', 'medium', 'large', 'xlarge']
+    > &
+      Schema.Attribute.DefaultTo<'none'>;
+    paddingTop: Schema.Attribute.Enumeration<
+      ['none', 'small', 'medium', 'large', 'xlarge']
+    > &
+      Schema.Attribute.DefaultTo<'none'>;
   };
 }
 
@@ -296,7 +352,10 @@ export interface ContentSettingsSwiperCard extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -307,7 +366,10 @@ export interface ContentSettingsSwiperLarge extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -318,7 +380,10 @@ export interface ContentSettingsSwiperSimple extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -329,7 +394,10 @@ export interface ContentSettingsTextElement extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
-    default: Schema.Attribute.String;
+    spacing: Schema.Attribute.Component<
+      'content-settings.spacing-settings',
+      false
+    >;
   };
 }
 
@@ -806,6 +874,7 @@ declare module '@strapi/strapi' {
       'content-settings.image-text': ContentSettingsImageText;
       'content-settings.infos': ContentSettingsInfos;
       'content-settings.mood-picture': ContentSettingsMoodPicture;
+      'content-settings.spacing-settings': ContentSettingsSpacingSettings;
       'content-settings.swiper-card': ContentSettingsSwiperCard;
       'content-settings.swiper-large': ContentSettingsSwiperLarge;
       'content-settings.swiper-simple': ContentSettingsSwiperSimple;

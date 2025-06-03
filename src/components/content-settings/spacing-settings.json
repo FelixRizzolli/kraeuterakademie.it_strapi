@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_content_settings_spacing_settings",
+  "info": {
+    "displayName": "SpacingSettings",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "marginTop": {
+      "type": "enumeration",
+      "default": "none",
+      "enum": [
+        "none",
+        "small",
+        "medium",
+        "large",
+        "xlarge"
+      ]
+    },
+    "marginBottom": {
+      "type": "enumeration",
+      "default": "large",
+      "enum": [
+        "none",
+        "small",
+        "medium",
+        "large",
+        "xlarge"
+      ]
+    },
+    "paddingTop": {
+      "type": "enumeration",
+      "default": "none",
+      "enum": [
+        "none",
+        "small",
+        "medium",
+        "large",
+        "xlarge"
+      ]
+    },
+    "paddingBottom": {
+      "type": "enumeration",
+      "default": "none",
+      "enum": [
+        "none",
+        "small",
+        "medium",
+        "large",
+        "xlarge"
+      ]
+    }
+  },
+  "config": {}
+}

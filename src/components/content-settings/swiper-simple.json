@@ -6,8 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "default": {
-      "type": "string"
+    "spacing": {
+      "type": "component",
+      "component": "content-settings.spacing-settings",
+      "repeatable": false
     }
   },
   "config": {}
