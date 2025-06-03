@@ -11,6 +11,16 @@
       "type": "component",
       "component": "content-settings.spacing-settings",
       "repeatable": false
+    },
+    "color": {
+      "type": "enumeration",
+      "required": true,
+      "default": "light",
+      "enum": [
+        "light",
+        "gray",
+        "dark"
+      ]
     }
   }
 }

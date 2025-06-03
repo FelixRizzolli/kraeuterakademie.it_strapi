@@ -185,6 +185,9 @@ export interface ContentSettingsAccordions extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -199,6 +202,9 @@ export interface ContentSettingsAnimatedText extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'dark'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -213,6 +219,9 @@ export interface ContentSettingsBookList extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'dark'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -227,6 +236,9 @@ export interface ContentSettingsCourseList extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -270,6 +282,9 @@ export interface ContentSettingsHighlightedLinks
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -284,6 +299,9 @@ export interface ContentSettingsImageText extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -298,6 +316,9 @@ export interface ContentSettingsInfos extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'dark'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -352,6 +373,9 @@ export interface ContentSettingsSwiperCard extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -366,6 +390,9 @@ export interface ContentSettingsSwiperLarge extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -380,6 +407,9 @@ export interface ContentSettingsSwiperSimple extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
@@ -394,6 +424,9 @@ export interface ContentSettingsTextElement extends Struct.ComponentSchema {
     icon: 'cog';
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<['light', 'gray', 'dark']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'light'>;
     spacing: Schema.Attribute.Component<
       'content-settings.spacing-settings',
       false
