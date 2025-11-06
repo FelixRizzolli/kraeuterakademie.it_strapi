@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.0] - 2025-11-XX
 
+### Added
+
+- GitHub Actions workflow for building and pushing Docker image (Strapi) to GitHub Container Registry
+- GitHub Actions workflow for automatic release creation when version changes in package.json - FelixRizzolli/auto-release-action
+- GitHub Actions step "Update CHANGELOG" (in .github/workflows/release.yml) that automatically updates CHANGELOG.md with dependency changes
+
 ## [0.5.0] - 2025-08-29
 
 ## Changed
