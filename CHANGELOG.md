@@ -13,6 +13,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for automatic release creation when version changes in package.json - FelixRizzolli/auto-release-action
 - GitHub Actions step "Update CHANGELOG" (in .github/workflows/release.yml) that automatically updates CHANGELOG.md with dependency changes
 
+
+### Changed
+
+- updated dependencies
+    - @strapi/plugin-cloud 5.23.1 → 5.30.1
+    - @strapi/plugin-graphql 5.23.1 → 5.30.1
+    - @strapi/plugin-users-permissions 5.23.1 → 5.30.1
+    - @strapi/strapi 5.23.1 → 5.30.1
+    - fs-extra 11.3.1 → 11.3.2
+    - sharp 0.34.3 → 0.34.5
+- updated devDependencies
+    - @types/node 24.3.0 → 24.10.0
+
 ## [0.5.0] - 2025-08-29
 
 ## Changed
