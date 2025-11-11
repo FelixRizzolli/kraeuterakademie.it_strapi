@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1] - 2025-11-11
+
+### Fixed
+
+- Added linux/arm64 and linux/amd64 platforms to the Docker build and push GitHub Actions workflows for Strapi
+- use RELEASE_TOKEN instead of GITHUB_TOKEN for the auto-release-action to trigger subsequent workflows
+
+### Changed
+
+- updated environment variable names for Strapi configuration
+
 ## [0.6.0] - 2025-11-06
 
 ### Added
@@ -13,24 +24,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow for automatic release creation when version changes in package.json - FelixRizzolli/auto-release-action
 - GitHub Actions step "Update CHANGELOG" (in .github/workflows/release.yml) that automatically updates CHANGELOG.md with dependency changes
 
-
 ### Changed
 
 - updated dependencies
-    - @strapi/plugin-cloud 5.23.1 → 5.30.1
-    - @strapi/plugin-graphql 5.23.1 → 5.30.1
-    - @strapi/plugin-users-permissions 5.23.1 → 5.30.1
-    - @strapi/strapi 5.23.1 → 5.30.1
-    - fs-extra 11.3.1 → 11.3.2
-    - sharp 0.34.3 → 0.34.5
+  - @strapi/plugin-cloud 5.23.1 → 5.30.1
+  - @strapi/plugin-graphql 5.23.1 → 5.30.1
+  - @strapi/plugin-users-permissions 5.23.1 → 5.30.1
+  - @strapi/strapi 5.23.1 → 5.30.1
+  - fs-extra 11.3.1 → 11.3.2
+  - sharp 0.34.3 → 0.34.5
 - updated devDependencies
-    - @types/node 24.3.0 → 24.10.0
+  - @types/node 24.3.0 → 24.10.0
 
 ## [0.5.0] - 2025-08-29
 
 ## Changed
 
-- @strapi/* 5.15.0 -> 5.23.1
+- @strapi/\* 5.15.0 -> 5.23.1
 - fs-extra 11.3.0 -> 11.3.1
 - pg 8.16.0 to 8.16.3
 - typescript 5.8.3 -> 5.4.4
