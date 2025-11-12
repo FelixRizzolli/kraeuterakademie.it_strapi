@@ -14,7 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+
 - updated environment variable names for Strapi configuration
+
+- updated dependencies
+    - @strapi/plugin-cloud 5.30.1 → 5.31.0
+    - @strapi/plugin-graphql 5.30.1 → 5.31.0
+    - @strapi/plugin-users-permissions 5.30.1 → 5.31.0
+    - @strapi/strapi 5.30.1 → 5.31.0
 
 ## [0.6.0] - 2025-11-06
 
