@@ -3,6 +3,8 @@ name: Build and Push Docker Image
 on:
   release:
     types: [published]
+  repository_dispatch:
+    types: [release-published]
   workflow_dispatch:
 
 env:
