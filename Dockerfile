@@ -1,5 +1,5 @@
 # Build Stage
-FROM node:22-alpine AS build
+FROM node:24-alpine AS build
 WORKDIR /opt/app
 
 # Install system dependencies
@@ -15,7 +15,7 @@ COPY . .
 RUN pnpm run build
 
 # Production Stage
-FROM node:22-alpine
+FROM node:24-alpine
 WORKDIR /opt/app
 
 # Install necessary system dependencies
