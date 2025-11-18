@@ -9,7 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+
 - updated environment variable names for Strapi configuration
+
+- updated dependencies
+    - react-router-dom 6.30.1 → 6.30.2
+- updated devDependencies
+    - @types/node 24.10.0 → 24.10.1
 
 ### Removed
 
