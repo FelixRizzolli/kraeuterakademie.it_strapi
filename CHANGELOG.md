@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.5] - 2025-12-16
 
+
+### Changed
+
+- updated dependencies
+    - @strapi/plugin-cloud 5.31.0 → 5.32.0
+    - @strapi/plugin-graphql 5.31.0 → 5.32.0
+    - @strapi/plugin-users-permissions 5.31.0 → 5.32.0
+    - @strapi/strapi 5.31.0 → 5.32.0
+    - mime-types 3.0.1 → 3.0.2
+- updated devDependencies
+    - @types/node 24.10.1 → 24.10.4
+
 ## [0.6.4] - 2025-11-18
 
 ### Changed
