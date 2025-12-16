@@ -5,17 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.5] - 2025-12-16
+
 ## [0.6.4] - 2025-11-18
 
 ### Changed
 
-
 - updated environment variable names for Strapi configuration
 
 - updated dependencies
-    - react-router-dom 6.30.1 → 6.30.2
+  - react-router-dom 6.30.1 → 6.30.2
 - updated devDependencies
-    - @types/node 24.10.0 → 24.10.1
+  - @types/node 24.10.0 → 24.10.1
 
 ### Removed
 
@@ -31,7 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-
 - Updated Dockerfile to use the Node 24 base image (switched from node:22-alpine to node:24-alpine).
 - Added a repository_dispatch trigger to the build-and-push GitHub Actions workflow so the release workflow can programmatically trigger Docker image builds.
 - Ensure Docker images pushed by the build-and-push workflow are tagged with the release version (added explicit version tagging to image pushes).
@@ -39,12 +39,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - @strapi/plugin-graphql 5.30.1 → 5.31.0
   - @strapi/plugin-users-permissions 5.30.1 → 5.31.0
   - @strapi/strapi 5.30.1 → 5.31.0
-
 - updated dependencies
-    - @strapi/plugin-cloud 5.30.1 → 5.31.0
-    - @strapi/plugin-graphql 5.30.1 → 5.31.0
-    - @strapi/plugin-users-permissions 5.30.1 → 5.31.0
-    - @strapi/strapi 5.30.1 → 5.31.0
+  - @strapi/plugin-cloud 5.30.1 → 5.31.0
+  - @strapi/plugin-graphql 5.30.1 → 5.31.0
+  - @strapi/plugin-users-permissions 5.30.1 → 5.31.0
+  - @strapi/strapi 5.30.1 → 5.31.0
 
 ## [0.6.1] - 2025-11-11
 
