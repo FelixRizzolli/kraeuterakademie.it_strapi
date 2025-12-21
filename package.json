@@ -17,10 +17,10 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.32.0",
-    "@strapi/plugin-graphql": "5.32.0",
-    "@strapi/plugin-users-permissions": "5.32.0",
-    "@strapi/strapi": "5.32.0",
+    "@strapi/plugin-cloud": "5.33.0",
+    "@strapi/plugin-graphql": "5.33.0",
+    "@strapi/plugin-users-permissions": "5.33.0",
+    "@strapi/strapi": "5.33.0",
     "fs-extra": "11.3.2",
     "mime-types": "3.0.2",
     "pg": "8.16.3",
